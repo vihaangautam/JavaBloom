@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* ===== PAGE & SURFACE ===== */
+  --bg-page: #eaf0e7;             /* sage/mint — the calm canvas */
+  --bg-card: #ffffff;             /* white — every card, panel, widget */
+  --bg-card-hover: #fafafa;       /* slight grey on hover */
+  --bg-elevated: #f8f9fa;         /* grey-50 — inner card sections */
+  --bg-nav: #d9e6d4;              /* sage — top pill navigation */
+  --bg-app-shell: #ffffff;        /* the main "tablet bezel" container */
+
+  /* ===== ACCENT SURFACES (for hero cards, banners) ===== */
+  --bg-hero: #f0edfc;            /* light lavender — "Continue Learning" card */
+  --bg-badge-purple: #e2d5f8;    /* soft purple — streak badge fill */
+  --bg-badge-yellow: #fceabb;    /* soft gold — level badge fill */
+  --bg-badge-green: #d9e6d4;     /* soft sage — actions badge fill */
+  --bg-xp-pill: #faf5ff;         /* purple-50 — XP chip background */
+
+  /* ===== BORDERS ===== */
+  --border-subtle: #f0f0f0;      /* gray-100 — card borders */
+  --border-hover: #e5e5e5;       /* gray-200 — card hover borders */
+  --border-app: #000000;         /* black — the app shell "bezel" */
+
+  /* ===== TEXT ===== */
+  --text-primary: #1a1a2e;       /* near-black — headings, primary text */
+  --text-body: #374151;          /* gray-700 — body copy */
+  --text-muted: #6b7280;         /* gray-500 — secondary labels */
+  --text-hint: #9ca3af;          /* gray-400 — hints, dates, meta */
+
+  /* ===== ACCENT COLORS ===== */
+  --accent-primary: #9333ea;     /* purple-600 — primary buttons, CTAs */
+  --accent-primary-hover: #7e22ce; /* purple-700 — button hover */
+  --accent-primary-light: #f0edfc; /* purple-50 — light purple backgrounds */
+  --accent-secondary: #6366f1;   /* indigo — secondary actions */
+
+  /* ===== SEMANTIC COLORS ===== */
+  --color-success: #22c55e;      /* green-500 — correct answers, high accuracy */
+  --color-warning: #f59e0b;      /* amber-500 — medium accuracy (60-79%) */
+  --color-danger: #ef4444;       /* red-500 — low accuracy, errors */
+  --color-info: #3b82f6;         /* blue-500 — informational, filter buttons */
+
+  /* ===== ACCURACY BAR COLORS ===== */
+  --bar-excellent: #22c55e;      /* green — 80-100% */
+  --bar-good: #22c55e;           /* green — 70-79% */
+  --bar-medium: #f59e0b;         /* amber — 50-69% */
+  --bar-weak: #ef4444;           /* red — below 50% */
+
+  /* ===== HEATMAP INTENSITY (purple scale) ===== */
+  --heatmap-0: #f3f4f6;          /* gray-100 — no activity */
+  --heatmap-1: #e9d5ff;          /* purple-200 — light */
+  --heatmap-2: #c084fc;          /* purple-300 — medium */
+  --heatmap-3: #a855f7;          /* purple-400 — heavy */
+  --heatmap-4: #7c3aed;          /* purple-500 — intense */
+
+  /* ===== CATEGORY TAG COLORS ===== */
+  --tag-practice: #dbeafe;       /* blue-100 bg, blue-700 text */
+  --tag-review: #f3e8ff;         /* purple-100 bg, purple-700 text */
+  --tag-assessment: #dcfce7;     /* green-100 bg, green-700 text */
+}
+
+@theme {
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Nunito", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-bg-page: var(--bg-page);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-nav: var(--bg-nav);
+  --color-bg-app-shell: var(--bg-app-shell);
+  
+  --color-bg-hero: var(--bg-hero);
+  --color-bg-badge-purple: var(--bg-badge-purple);
+  --color-bg-badge-yellow: var(--bg-badge-yellow);
+  --color-bg-badge-green: var(--bg-badge-green);
+  --color-bg-xp-pill: var(--bg-xp-pill);
+  
+  --color-border-subtle: var(--border-subtle);
+  --color-border-hover: var(--border-hover);
+  --color-border-app: var(--border-app);
+  
+  --color-text-primary: var(--text-primary);
+  --color-text-body: var(--text-body);
+  --color-text-muted: var(--text-muted);
+  --color-text-hint: var(--text-hint);
+  
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-hover: var(--accent-primary-hover);
+  --color-accent-primary-light: var(--accent-primary-light);
+  --color-accent-secondary: var(--accent-secondary);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+}
+
+/* Custom Component Primitives */
+.app-shell {
+  background: var(--bg-app-shell);
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 2px solid var(--border-subtle);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  transform: translate(-2px, -2px);
+}
+
+.pill-nav {
+  background: var(--bg-nav);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  transition: transform 0.15s, background 0.2s, box-shadow 0.15s;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--accent-primary-hover);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.btn-primary:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.xp-pill {
+  background: var(--bg-xp-pill);
+  color: var(--accent-primary);
+  border-radius: 9999px;
+  padding: 0.375rem 0.75rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: 2px solid var(--accent-primary);
+}
