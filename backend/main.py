@@ -7,6 +7,8 @@ import database
 from database import get_db, engine
 import datetime
 from typing import Optional, List
+from pydantic import BaseModel
+from java_tracer import JavaTracer
 
 # Create database tables if they do not exist
 models.Base.metadata.create_all(bind=engine)
@@ -206,11 +208,187 @@ def get_user_activities(user_id: str, db: Session = Depends(get_db)):
 
 # Questions API
 @app.get("/questions")
-def get_questions(track: str, type: Optional[str] = None, db: Session = Depends(get_db)):
+def get_questions(track: str, type: Optional[str] = None, chapter: Optional[int] = None, sub_type: Optional[str] = None, db: Session = Depends(get_db)):
     query = db.query(models.Question).filter(models.Question.track == track)
     if type:
         query = query.filter(models.Question.type == type)
+    if chapter is not None:
+        query = query.filter(models.Question.chapter_number == chapter)
+    if sub_type is not None:
+        query = query.filter(models.Question.sub_type == sub_type)
     return query.all()
+
+@app.get("/chapters")
+def get_chapters(track: str, db: Session = Depends(get_db)):
+    """Returns distinct chapters for a track, ordered by chapter_number."""
+    chapters = db.query(
+        models.Question.chapter_number,
+        models.Question.chapter_title
+    ).filter(
+        models.Question.track == track,
+        models.Question.type == "predict_output"
+    ).distinct().order_by(models.Question.chapter_number).all()
+    return [{"chapter_number": c[0], "chapter_title": c[1]} for c in chapters if c[0] is not None]
+
+@app.get("/chapters/progress", response_model=List[schemas.ChapterProgressResponse])
+def get_chapter_progress(user_id: str, track: str, db: Session = Depends(get_db)):
+    """Returns completion % and mistake count per chapter."""
+    chapters = db.query(
+        models.Question.chapter_number,
+        models.Question.chapter_title
+    ).filter(
+        models.Question.track == track,
+        models.Question.type == "predict_output"
+    ).distinct().order_by(models.Question.chapter_number).all()
+
+    response = []
+    for ch_num, ch_title in chapters:
+        if ch_num is None:
+            continue
+        # Total questions in this chapter
+        total_q = db.query(models.Question).filter(
+            models.Question.track == track,
+            models.Question.type == "predict_output",
+            models.Question.chapter_number == ch_num
+        ).count()
+
+        # All attempts by this user for this chapter
+        attempts = db.query(models.ArenaAttempt).filter(
+            models.ArenaAttempt.user_id == user_id,
+            models.ArenaAttempt.track == track,
+            models.ArenaAttempt.chapter_number == ch_num
+        ).all()
+
+        # Unique questions answered correctly
+        correct_q_ids = {a.question_id for a in attempts if a.is_correct}
+        correct_count = len(correct_q_ids)
+
+        # Unique questions attempted
+        attempted_q_ids = {a.question_id for a in attempts}
+        attempted_count = len(attempted_q_ids)
+
+        # Mistakes (total wrong attempts)
+        mistakes = sum(1 for a in attempts if not a.is_correct)
+
+        completion_pct = (correct_count / total_q * 100) if total_q > 0 else 0.0
+
+        response.append(schemas.ChapterProgressResponse(
+            chapter_number=ch_num,
+            chapter_title=ch_title,
+            total_questions=total_q,
+            correct_count=correct_count,
+            attempted_count=attempted_count,
+            mistakes=mistakes,
+            completion_pct=round(completion_pct, 1)
+        ))
+    return response
+
+@app.post("/arena/submit", response_model=schemas.ArenaSubmitResponse)
+def submit_arena_answer(req: schemas.ArenaSubmitRequest, db: Session = Depends(get_db)):
+    """Records attempt, checks answer, awards XP (first-correct-only), returns result."""
+    question = db.query(models.Question).filter(models.Question.id == req.question_id).first()
+    if not question:
+        raise HTTPException(status_code=404, detail="Question not found")
+        
+    user_ans = req.user_answer.strip()
+    correct_ans = question.correct_answer.strip()
+    is_correct = user_ans == correct_ans
+
+    # Check if the user already solved this question correctly before
+    already_solved = db.query(models.ArenaAttempt).filter(
+        models.ArenaAttempt.user_id == req.user_id,
+        models.ArenaAttempt.question_id == req.question_id,
+        models.ArenaAttempt.is_correct == True
+    ).first() is not None
+
+    xp_earned = 0
+    if is_correct and not already_solved:
+        xp_earned = 10
+        profile = db.query(models.Profile).filter(models.Profile.id == req.user_id).first()
+        if profile:
+            profile.total_xp += xp_earned
+            # Compute new level
+            xp_requirements = [0, 100, 300, 600, 1000, 1500, 2200, 3000, 4000, 5500]
+            new_level = 1
+            for i, req_xp in enumerate(xp_requirements):
+                if profile.total_xp >= req_xp:
+                    new_level = i + 1
+                else:
+                    break
+            profile.level = new_level
+            
+            # Log UserActivity
+            act = models.UserActivity(
+                user_id=profile.id,
+                activityType="drill_complete",
+                displayName=f"Solved a Predict the Output question in {question.chapter_title}",
+                xpEarned=xp_earned,
+                createdAt=datetime.datetime.utcnow().isoformat() + "Z",
+                activity_metadata={"question_id": question.id, "chapter_number": question.chapter_number}
+            )
+            db.add(act)
+
+    # Record attempt
+    attempt = models.ArenaAttempt(
+        user_id=req.user_id,
+        question_id=req.question_id,
+        track=question.track,
+        chapter_number=question.chapter_number,
+        user_answer=req.user_answer,
+        is_correct=is_correct,
+        time_taken_ms=req.time_taken_ms,
+        attempted_at=datetime.datetime.utcnow().isoformat() + "Z"
+    )
+    db.add(attempt)
+    db.commit()
+
+    return schemas.ArenaSubmitResponse(
+        is_correct=is_correct,
+        correct_answer=question.correct_answer,
+        explanation=question.explanation,
+        xp_earned=xp_earned,
+        already_solved=already_solved
+    )
+
+@app.get("/arena/mistakes", response_model=List[schemas.MistakeDetail])
+def get_arena_mistakes(user_id: str, track: str, chapter: int, db: Session = Depends(get_db)):
+    """Returns mistake log for a user in a specific chapter."""
+    wrong_attempts = db.query(models.ArenaAttempt).filter(
+        models.ArenaAttempt.user_id == user_id,
+        models.ArenaAttempt.track == track,
+        models.ArenaAttempt.chapter_number == chapter,
+        models.ArenaAttempt.is_correct == False
+    ).order_by(models.ArenaAttempt.attempted_at.asc()).all()
+
+    from collections import defaultdict
+    grouped = defaultdict(list)
+    for att in wrong_attempts:
+        grouped[att.question_id].append(att.user_answer)
+
+    res = []
+    for q_id, wrong_answers in grouped.items():
+        question = db.query(models.Question).filter(models.Question.id == q_id).first()
+        if not question:
+            continue
+        
+        code = ""
+        if question.content and isinstance(question.content, dict):
+            code = question.content.get("code") or question.content.get("expression") or ""
+
+        total_attempts = db.query(models.ArenaAttempt).filter(
+            models.ArenaAttempt.user_id == user_id,
+            models.ArenaAttempt.question_id == q_id
+        ).count()
+
+        res.append(schemas.MistakeDetail(
+            question_id=q_id,
+            code=code,
+            correct_answer=question.correct_answer,
+            user_answers=wrong_answers,
+            explanation=question.explanation,
+            attempt_count=total_attempts
+        ))
+    return res
 
 # Traces API
 @app.get("/traces/{question_id}")
@@ -225,3 +403,15 @@ def get_trace(question_id: str, db: Session = Depends(get_db)):
         "steps": trace.steps,
         "finalOutput": trace.final_output
     }
+
+class GenerateTraceRequest(BaseModel):
+    code: str
+
+@app.post("/sandbox/generate")
+def generate_trace(req: GenerateTraceRequest):
+    tracer = JavaTracer(req.code)
+    res = tracer.trace()
+    if 'error' in res:
+        raise HTTPException(status_code=400, detail=res['error'])
+    return res
+

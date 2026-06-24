@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 
 class ProfileBase(BaseModel):
     username: str
@@ -58,3 +58,39 @@ class HeatmapDayResponse(BaseModel):
     date: str
     count: int
     level: int
+
+# --- Arena-specific schemas ---
+
+class ArenaSubmitRequest(BaseModel):
+    user_id: str
+    question_id: str
+    user_answer: str
+    time_taken_ms: Optional[int] = None
+
+class ArenaSubmitResponse(BaseModel):
+    is_correct: bool
+    correct_answer: str
+    explanation: Optional[str] = None
+    xp_earned: int
+    already_solved: bool  # True if they already got this one right before
+
+class ChapterInfo(BaseModel):
+    chapter_number: int
+    chapter_title: str
+
+class ChapterProgressResponse(BaseModel):
+    chapter_number: int
+    chapter_title: str
+    total_questions: int
+    correct_count: int      # Unique questions answered correctly
+    attempted_count: int    # Unique questions attempted
+    mistakes: int           # Total wrong attempts
+    completion_pct: float   # correct_count / total_questions * 100
+
+class MistakeDetail(BaseModel):
+    question_id: str
+    code: str
+    correct_answer: str
+    user_answers: List[str]  # All wrong answers they gave
+    explanation: Optional[str] = None
+    attempt_count: int

@@ -27,7 +27,7 @@ export const ArenaPage: React.FC = () => {
     {
       id: 'predict-output',
       title: 'Predict The Output',
-      desc: 'Look at a code snippet, predict the console output, and run a visual comparison check.',
+      desc: 'Solve 10 medium-difficulty exam questions per chapter with detailed mistake tracking and progress analytics.',
       xp: 10,
       tag: 'Practice',
       icon: Terminal,

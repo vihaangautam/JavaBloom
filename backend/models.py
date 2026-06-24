@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Integer, ForeignKey, Text, JSON
+from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, Text, JSON
 from sqlalchemy.orm import relationship
 from database import Base
 import uuid
@@ -41,7 +41,10 @@ class Question(Base):
     id = Column(String(50), primary_key=True, default=generate_uuid)
     track = Column(String(20)) # ICSE9, ICSE10, APCSA
     chapter_title = Column(String(100))
+    chapter_number = Column(Integer, nullable=True)  # e.g. 5 for "Ch 5: Operators"
+    difficulty = Column(String(20), default="medium")  # easy, medium, hard
     type = Column(String(50)) # type_confusion, predict_output, bug_fix, flashcard, etc.
+    sub_type = Column(String(50), nullable=True) # e.g. rule_1, rule_2, etc.
     content = Column(JSON) # MCQ options, etc.
     correct_answer = Column(String(200))
     explanation = Column(Text, nullable=True)
@@ -54,3 +57,20 @@ class Trace(Base):
     code = Column(Text)
     steps = Column(JSON) # Steps list containing variables and output state
     final_output = Column(Text)
+
+class ArenaAttempt(Base):
+    """Tracks every arena submission — correct or wrong — for progress and mistake analysis."""
+    __tablename__ = "arena_attempts"
+
+    id = Column(String(50), primary_key=True, default=generate_uuid)
+    user_id = Column(String(50), ForeignKey("profiles.id", ondelete="CASCADE"))
+    question_id = Column(String(50), ForeignKey("questions.id", ondelete="CASCADE"))
+    track = Column(String(20))
+    chapter_number = Column(Integer)
+    user_answer = Column(Text)
+    is_correct = Column(Boolean, default=False)
+    time_taken_ms = Column(Integer, nullable=True)
+    attempted_at = Column(String(50))  # ISO timestamp
+
+    profile = relationship("Profile")
+    question = relationship("Question")

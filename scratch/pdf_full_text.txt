@@ -1,0 +1,4950 @@
+
+=== PAGE 1 ===
+ 
+COMPUTER APPLICATION 
+CLASS 9 
+ACCORDING TO ICSE 2022 SYLLABUS 
+BOOK : ICSE UNDERSTANDING COMPUTER APPLICATION with Bluej from ARYA PUBLICATION 
+FIRST TERM PORTION 
+Contents 
+1. Introduction to Object Oriented Programming  and  Introduction to Java 
+2. Elementary concepts of Objects and classes 
+3. Values and Data Types 
+4. Operators and Expression 
+5. Input in Java 
+6 Mathematical Library functions 
+7. Conditional constructs in Java 
+SECOND TERM PORTION 
+FIRST TERM PORTION 
+ Plus 
+8.Iterative construct in Java 
+9.Nested for loop 
+10.Compiting and Ethics 
+ 
+ 
+ 
+CH 1: INTRODUCTION TO OBJECT ORIENTED PROGRAMMING CONCEPTS 
+1. What are the two types of programming languages? 
+Ans. Low level languages and high level languages. 
+2. What are the programming language generations? 
+Ans. First generation language (machine language), second generation language( assembly language), 
+third generation language(BASIC, COBOL, C),fourth generation language (SQL, WAVE) and the fifth 
+generation language (Prolog, Mercury). 
+
+=== PAGE 2 ===
+3. What do you mean by programming paradigm? 
+Ans. It is an approach to solve a given problem by writing a set a instructions in a programming language. 
+It refers to the organizing principles of a program. 
+4. What are the different programming paradigms? 
+Ans: Procedural or modular programming and Object oriented Programming. 
+5. What is Object Oriented Programming? 
+Ans: The object oriented programming approach focuses a problem in terms of classes and objects. The 
+OOP determines the classes and objects needed for the solution of a problem and provides a full set of 
+operations for each class. 
+6. List the concepts of OOPs. 
+Ans: The concepts of OOPs are: 
+? 
+Data Abstraction 
+? 
+Encapsulation 
+? 
+Modularity 
+? 
+Inheritance 
+? 
+Polymorphism 
+ 
+7. Write  the differences between Procedural Programming and Object Oriented Programming. 
+Ans: Procedural programming aims more at procedures. The emphasis is a doing things rather than the 
+data being used. In procedural Programming paradigm data are shared among all the functions 
+participating thereby risking data safety and security. Object Oriented Programming is based on principles 
+of data hiding, abstraction, inheritance and polymorphism. It implements programs using classes and 
+objects, In OOP?s data and procedure both given equal importance. Data and functions are encapsulated 
+to ensure data safety and security. 
+8. What is an abstraction? 
+Ans: The act of representing the essential features without including the background details or 
+explanation. E.g. in a switchboard we press the switches according to our requirements without knowing 
+the circuitry. 
+9. What is encapsulation?  
+Ans:The wrapping up of data and functions into a single unit called a class in known as encapsulation. E.g 
+In a medicine capsule all the constituents are encapsulated inside the capsule. Doctor administers the 
+intake of the entire capsule. 
+10. What is inheritance and how it is useful in Java. Give examples. [2008] 
+Ans: It is process by which objects of one class acquire the properties of objects of another class. 
+Inheritance supports the concepts of hierarchical representation. In OOP the concepts of inheritance 
+provides the idea of reusability. 
+
+=== PAGE 3 ===
+e.g. A class CAR inherits some property from the class Automobiles, which in turn inherits properties from 
+Vehicle class. The capability to pass down properties and so allows us to describe things efficiently. 
+11. What role does polymorphism play as java feature? 
+Ans: It means the ability for a message or data to take more than one form. For example, an operation, 
+many types of data used in the operation. 
+E.g. a child behaves like a student in school, customer  in a shopping mall, passenger in a bus and like a 
+son/daughter at home. Same person behave differently in various circumstances 
+ 
+Ch 2: INTRODUCTION TO JAVA 
+1. What was Java originally known as? Who developed Java? 
+Ans. Java was originally known as OAK. It was developed by James Gosling . 
+2. What are the characteristics of Java? 
+Ans: The characteristics of Java as follows: 
+i) It is an object oriented language, simple and robust. 
+ii) Java program is both compiled and interpreted. 
+iii) Write once run anywhere (WORA). The java programs are written once, but can be run on different 
+platform without making changes. 
+iv)Has enhanced security features. 
+v)Platform independent. 
+ 
+3. What is the difference between source code and object code? 
+Ans. The program code written by the programmer is called the source code. 
+The source code in translated into the machine understandable code called as object code or the native 
+executable code. 
+4. How does ordinary compilation takes place? 
+Ans. The process of converting the source code into machine code is called compilation. The compilation 
+produces the machine code. For different platforms different machine codes are produce. 
+e.g Windows compiler produces an object code that run in Windows computer only. 
+5. Sc   iefly explain the compilation process of Java source code. 
+Ans. Compilation in java: 
+i. Java programs are written in ?.java? files and are compiled by the compiler to produce the bytecode 
+(.class file) 
+ii. The JVM is a virtual machine which reads the byte code and interprets into machine code(object code) 
+6. Explain the two types of Java programs. 
+
+=== PAGE 4 ===
+Ans: Two types of Java programs are Applets and Stand alone applications. 
+     i. Applets ? small programs that are embedded in web pages and are run on the viewer?s machine by 
+Java capable sc   owsers. Used for games and simulation programs. 
+    ii. Standalone application- includes the software applications that do not require low level operating 
+system or hardware access. This includes most desktop applications like word processors and 
+spreadsheets 
+7. What is a bytecode? 
+Ans: Bytecode is an intermediate code produce after compilation of Java source code. Bytecode is a set 
+of pseudo machine language instructions that are understood by the JVM (Java Virtual Machine) and are 
+independent of the underlying hardware (platform independent). 
+8. What do you understand by JVM? 
+Ans: JVM or Java Virtual Machine is an abstract machine designed to be implemented on top of existing 
+processors. It hides the underlying OS from Java application. Programs written in Java are compiled into 
+Java byte-code, which is then interpreted by a special java Interpreter for a specific platform. This Java 
+interpreter is known as Java Virtual Machine (JVM). 
+9. What is JDK (Java Development Kit)? 
+Ans: The Java development kit comes with a collection of tools that are used for developing and running 
+java programs. 
+10. What are Java APIs? 
+Ans: The Java APIs (Application Program Interface) consist of lisc   aries of pre-compiled code that 
+programmers can use in their application. 
+11. What do you know about BlueJ? 
+Ans: BlueJ is a Java development environment. It is an IDE (Integrated Development Environment), which 
+includes an editor a debugger and a viewer. 
+12. How you create, compile and execute a program in Java or BlueJ? Explain your answer? 
+Ans: Create: Click on New Class button from BlueJ editor, then type the class name a program icon will 
+be created. Double click on it, a program editor will be open, erase the code and type your program 
+coding.  
+Compile: click the Compile button on the left of the window or right click on the class icon and select 
+compile from the menu options. 
+ Execute: Right click on the class icon and select new class name option. A dialogue box appears type the 
+name of the object. An object icon will be created at the bottom. Right click on the object icon and select 
+the method we want to execute. 
+13. Why do we use main( )? 
+
+=== PAGE 5 ===
+Ans. In a Java standalone program the execution begins from the main( ). The main( ) is the entry point in 
+Java and all other functions are called from this method. 
+ 
+ 
+ 
+ 
+ 
+CH 3: ELEMENTARY CONCEPT OF OBJECTS AND CLASSES 
+1.  Define the terms: 
+i.Object- an object is an identifiable entity with some characteristics/properties/attribute, state and 
+behavior. 
+ii.Attributes- the properties defining an object are termed as attributes or characteristics of an object. 
+iii.State ? the state of an object includes all the static properties plus the current values of these 
+properties. 
+iv.Class- a class is a blueprint defining the structure( characteristics and behavior) of objects on which 
+actual objects are created.  
+2. How do objects communicate with each other? 
+Ans. Objects communicate with each other through message passing. 
+3. How can you implement abstraction in programming terms? 
+Ans. To implement abstraction in software terms we define a class. There can be many classes for an 
+entity.  
+4.  Classes are user defined type. Explain. 
+Ans. To represent an abstraction in programming terms, a user defined type is created based on which 
+multiple objects of same type can be created. Thus in software terms, a class represents a type with 
+certain specifications. Once a class in created, multiple objects of this class type can be created. 
+5. How are classes and objects implemented in software terms? 
+Ans. 
+In 
+software 
+terms, 
+classes 
+and 
+objects 
+are 
+implemented 
+by 
+representing 
+the 
+characteristics/properties/attributes as data members and behavior through methods/member-functions. 
+6. ?Object is an instance of a class?, Explain 
+Ans: Object of a class contains data and functions provided in a class. It possesses all the features of a class. 
+Hence object is termed as instance of a class. 
+
+=== PAGE 6 ===
+7. 
+State two differences between fundamental and user-defined data type. Ans. 
+Comparison of Fundamental & User defined data type. 
+Fundamental data type 
+User defined data type 
+These are inbuilt data type provided by 
+the Java Language. 
+These are data types created by the user 
+using fundamental or user defined data 
+type or both. 
+The size of it is fixed. 
+The size of different user-defined data 
+type depends upon the size of the 
+individual components of it. 
+These data types are available in all parts 
+of a program within a class. 
+These data types are available only as 
+specified by the access specifiers. 
+8. 
+State two differences between a class and an object. Ans. 
+A class 
+An object 
+Class is a blueprint or template from 
+which objects are created. 
+Object is an instance of a class. 
+Class is a group of similar objects. 
+Object is a real world entity such as pen, 
+laptop, mobile, bed, keyboard, mouse, chair 
+etc. 
+Class is a logical entity. 
+Object is a physical entity. 
+9. 
+Why is a class called a user-defined data type? 
+Ans. Primitive data types are the general and fundamental data types that we have in Java and those 
+are byte, short, int, long, float, double, char, boolean, etc., User defined data types are those 
+that user / programmer himself defines. 
+10. 
+What is an access specifier? Which two access specifier is used in a class declaration? 
+Ans. Access modifiers (or access specifiers) are keywords in object-oriented languages that set the 
+accessibility of classes, methods, and other members. Access modifiers are a specific part of 
+programming language syntax used to facilitate the encapsulation of components. 
+The public and default access specifier is used in a class declaration. 
+11. 
+Why is a class called an object factory? 
+Ans. A class is called an object factory because objects are created from a class. An object is an 
+instance of a class. 
+The following statements create two objects s1 and s2 of the class Student. 
+Student s1 = new Student(); 
+Student s2 = new Student(); 
+So, we have a single class Student but we can create as many objects as we want (like s1, s2, 
+etc.) from that single class. 
+This is similar to what happens in a factory. Consider a factory which produces car. They have 
+only a single design of a car but produce multiple cars from that single design. 
+Things are similar in the world of classes and objects. There is a single definition of a particular 
+class (like Student) but we can produce many Student objects (like s1, s2) from that single 
+class. 
+
+=== PAGE 7 ===
+12. 
+State two rules you should follow for naming a class. 
+Ans. While using names for a class the following set of rules are to be kept in mind. 
+a. 
+It can have any alphabet (capital or small), digits, underscore and dollar sign characters. 
+For example, a, b, cat, mat123, cost_price, Topaz$ are all example of valid identifier. 
+b. 
+It should not begin with digits or should not contain any special character. For example 2ab, 
+ab#c, top@, etc., are invalid identifiers as it either begins with a digit or contain special 
+characters (like #, @). 
+c. 
+It cannot have a space between it. For example, Simple Interest or Selling Price are invalid 
+class-names as it contains a space. 
+d. 
+It must not be a keyword. For example, for, while, do are invalid class-names as they are 
+keywords and are assigned some special function for the language. 
+e. 
+It can be of any length. Even though Java gives you the flexibility to provide a huge length for 
+an identifier a very long name is impractical and difficult to manage. 
+ 
+ 
+CH 4: VALUES AND DATA TYPES 
+1. What is Unicode? 
+Ans.Java uses the Unicode character set. It is a two-byte code set that has characters representing 
+almost all characters in almost all human alphabets and writing systems around the world. Unicode is a 
+superset of ASCII and the numbers 0 to 127 has the same meaning in both ASCII and Unicode formats.  
+ 
+2. State the differences between Syntax errors and Logical errors. 
+Ans: The compiler can only translate a program if the program is syntactically correct; otherwise the 
+compilation fails and you will not be able to run your program. Syntax refers to the structure of your program 
+and the rules about that structure. 
+The second type of error is a run-time error, so-called because the error does not appear until you run the 
+program. In Java, run-time errors occur when the interpreter is running the byte code and something goes 
+wrong. 
+3. Differentiate between Testing and Debugging. 
+Ans: Testing is the process of checking program logic manually to ensure whether it contains any error or not. 
+Debugging is the process of removing errors from a program. 
+6.  What are tokens? 
+Ans: Tokens are the smallest individual units in a program. Also known as lexical units. The types of tokens: 
+keywords, identifiers, literals , punctuators and operators. 
+7. What are keywords? Can keywords be used as a identifiers? 
+Ans: Keywords are the reserved words that convey a special meaning to the language compiler. No, 
+keywords are reserved for special purpose and must not be used as identifiers. 
+
+=== PAGE 8 ===
+8. What is an identifier? What is the identifier formatting rule of Java? OR What are the rules for naming 
+a variable? 
+Ans: Identifiers are names given by the programmer to different parts of a program e.g. variables, functions, 
+classes,packages etc. The rules of naming identifiers in Java. 
+(i) Can contain alphabets, digits, dollar sign and underscore. 
+(ii) Must not start with a digit. 
+(iii) Cannot be a Java keywords. 
+(iv) Can have any length and are case-sensitive. 
+9. State the difference between Token and Identifier.[2008] 
+Ans: The smallest individual unit of a program is known as Token.every unit that makes a statem is known as 
+atoken. The following Tokens are available in Java: Keywords, Identifiers, Literals, Punctuations, Operators. 
+Identifiers are names given by the programmer to different parts of a program e.g. variables, functions, 
+classes etc. 
+10. What are literals? How many types of integer literals are available in Java? 
+Ans: A literal is sequence of characters used in a program to represent a constant value. For example ?A? is a 
+literal that represents the value A of type char, and 17L is a literal that represents the number 17 as value of 
+type long. Different types of literals available in Java, they are: Integer literal, Float literal, Boolean literal, 
+Character literal, String literal and null literal. 
+Integer literals are of three types ? Decimal Integer literal (9) , Octal integer literal(09) and Hexadecimal 
+integer literal (0X9) 
+11. What is an integer constant? Write integer forming rule of Java. 
+Ans: Integer constants are whole numbers without any decimal part. The rule for forming an integer constants 
+is: An integer constant must have at least one digit and cannot contain a decimal point. It may contains + or ? 
+sign. A number with no sign is interpreted to be positive. 
+12. What do you mean by Escape sequence and name few escape sequences in Java? 
+Ans: Java has certain nongraphic characters (nongraphic characters are those characters that cannot be 
+typed directly from keyboard e.g. backspace, tab, carriage return etc.). Those nongraphic characters can be 
+represented by escape sequence. An escape sequence is represented by backslash followed by one or more 
+character. The few escape sequence characters are: \n for new line, \t for Horizontal Tab, \v for Vertical Tab, 
+\b for Backspace, \? for Double Quotes etc. 
+13. What is meant by a floating constant in Java? How many ways can a floating constant be represented 
+into? 
+Ans: Floating constants are real numbers with fractional points. A floating constant can either be represented 
+in  fractional form (e.g.  0.00456) or in exponent form  
+(e.g. 4.56E-03) 
+
+=== PAGE 9 ===
+14. Differentiate between Integer and Floating type constants. 
+Ans: Integer constants are the whole numbers (without decimal points). e.g. 1231. Floating point constants 
+are fractional numbers (number with decimal points). e.g. 14.2356 
+15.  Write the following real constants into fractional form: 0.113E04, 0.417E-04, 0.4E-05, 0.123E02 
+Ans: 0.113E04 becomes 1130, 0.417E-04 becomes .0000417, 0.4E-05 becomes .000004, 0.123E02 
+becomes 12.3 
+16. What is a type or ?Data Type?? How this term is related to programming? 
+Ans: A type or datatype represents a set of possible values. When we specify that a variable has certain type, 
+we are saying what values the expression can have. For example to say that a variable is of type int says that 
+integer values in a certain range can be stored in that variable. 
+Datatypes in programming are the means to identify the type of data and the associated operations of 
+handling it. 
+17. What is primitive data type? Name its different types. 
+Ans: Primitive(fundamental)  data types are those that are not composed of other data types. Numeric 
+Integral, Fractional, character and boolean are different primitive data types. 
+18. Differentiate the two kinds of data types? [2006] 
+Ans: The two types of data types are: Primitive and non-primitive/composite/user define data types.  
+The primitive data types are the basic datatypes provided by the language. It is used to define and hold a 
+value in a named variable. They  are: byte, short, int, long, float, double, char and Boolean.  
+The non-primitive/reference data types are created using primitive datatypes. It is used to store the memory 
+address of an object. The reference datatypes are: class, array and interface. 
+19. How many bytes occupied by the following data types: byte, short, int, long, float, double, char, 
+boolean. 
+Ans: char-2 byte, byte-1 byte, short-2 bytes, int-4 bytes, long-8 bytes, float-4 bytes, double-8 bytes, boolean-
+Java reserve 8 bits but only use 1 bit. 
+20. What is the range of the following data types: byte, short, int, long, float, double, char, boolean. 
+Ans: byte 
+ -27 to +27-1 
+short  
+ -215 to 215-1 
+int 
+-231 to 231-1 
+long 
+-263 to 263-1 
+float 
+ -3.4?1038 to 3.4?1038 
+double 
+ -1.7?10308 to 1.7?10308 
+char 
+0 to 65536 
+
+=== PAGE 10 ===
+boolean 
+ true or false 
+21. What do you mean by variables? [2006] 
+Ans: A variable is a named memory location, which holds a data value of a particular data types. E.g. double 
+p; 
+22. What do you mean by variables? What do you mean by dynamic initialization of a variable? 
+Ans: A variable is a named memory location, which holds a data value of a particular data types. When a 
+method or functions is called and the return value is initialized to a variable is called dynamic initialisation.  
+e.g. double p=Math.pow(2,3); 
+23.  Differentiate between character  and boolean data type. 
+Ans. 
+Character 
+i. stores Unicode character 
+ii. Size 2 bytes 
+iii. Range : 0 to 65,535 
+Boolean 
+i. used to represent a single true/false value 
+ii. Java reserves 8 bits but uses 1 bit 
+iii. Range : true or false 
+
+=== PAGE 11 ===
+24. How can you change a variable to a constant? Give an example. 
+Ans. The keyword final makes a variable as constant , so that the its value cannot be changed 
+during program execution. 
+e.g final double rate=5.5; 
+CH 5: OPERATORS AND EXPRESSIONS 
+1. What is the function of an operator? Name the types. 
+Ans: Operators are special symbols that represent operations that can be carried out on variables, 
+constants or expressions. An operator is mostly an symbol and sometimes a keyword also. 
+The different types of operators are: 
+Arithmetic operator( unary operators, binary operators, increment/decrement operators) 
+Relational operators 
+Logical Operators 
+Assignment operators 
+Conditional operator ?: 
+New operator 
+Dot(.) operator 
+2. What are arithmetic operators? 
+Ans: Arithmetic operators are used for various mathematical calculations. The result of an 
+arithmetical expression is numerical values. Arithmetical operators are of following types: Unary 
+and Binary operators and increment/decrement operator. 
+3. Write major difference between the unary and binary operators? 
+Ans: The operators that acts on one operand are referred to as Unary Operator. There are two 
+Unary operators Unary + operator and Unary ? operator. The operators that acts upon two 
+operands are referred to as Binary Operator. The Binary Operators are Addition (+), Subtraction (-
+), Multiplication (*), Division (/) and Modulus (%). 
+4. What is increment operator? What are postfix and prefix increment operators? 
+Ans: The ?++? operator is called increment operator. The increment operators add 1 to its operand. 
+These are two types (i) Prefix and (ii) Postfix The prefix version comes before the operand for e.g. 
+++a, where as postfix comes after the operand e.g. a++ 
+5. Find the value of x after evaluating x += x++ + ?x + 4 where x=3 before the evaluation. 
+Explain your answer. 
+Ans: Result is 13, because x++ is 3, ?x is 2 + 4 the answer is 9 add this with x that is 3 it becomes 
+12 and due to pre increment of x++ the result becomes 13. 
+6. What do you mean by Relational Operators? 
+Ans: Relational operators are used to determine the relationship between different operands. 
+These are used in work of compression also. The relational expression (condition) returns 0 if the 
+
+=== PAGE 12 ===
+relation is false and return 1 if the relation is true. < (less then), > (greater then), <= (less then 
+equals to), >= (greater then equals to), == (equals to), != (not equals to). 
+7. What is Logical operators? 
+Ans: The logical operators combine the result of or more than two expressions. The mode of 
+connecting relationship in these expressions refers as logical and the expressions are called 
+logical expression. The logical expression returns 1 if the result is true otherwise it returns 0. The 
+logical operators provided by Java are && Logical AND, || Logical OR, ! Logical NOT. 
+8. What do you mean by Assignment Statement or Assignment Operator? 
+Ans: Assignment operator is represent by symbol ?=?. It takes the value on the right and stores it. It 
+assigns one value to the other.  
+9. Illustrate ??? operator with an example? [2009] 
+Ans: It is a conditional operator, that stores a value depending upon a condition. This operator is 
+also 
+known 
+as 
+ternary 
+operator. 
+The 
+syntax 
+for 
+this 
+operator 
+is 
+expression1?expression2:expression3 . and the example is  bonus=sales>15000?250:50; 
+10. What is the purpose of new operator? [2006] 
+Ans: We can use new operator to create a new objects or new array. 
+Ex. myCar obj = new myCar(); 
+int arr[] = new int[5]; 
+11. What do you mean by precedence? Illustrate with the help of example. 
+Ans: Precedence is the order in which a program evaluates the operations in a formula or 
+expression. All operators have precedence value. An operator with higher precedence value is 
+evaluated first then the operator having lower precedence value. consider the following example 
+x = 5 + 4 *9; 
+The value of this expression is 29 not 54 or 34. Multiplication has been performed first in this 
+expression. 
+ 
+12. What is operands? 
+Ans: An operator acts on different data items/entities called operands. The objects of the operation 
+are referred as operands. 
+13. What do you mean by constant? How you declare a variable as constant variables. 
+Ans: The memory variables/locations whose values cannot be changed within the program is 
+called constants. The keyword final makes a variable as constants.  
+
+=== PAGE 13 ===
+e.g. final int x=203; 
+14. What do you mean by type conversion? What is the difference between implicit and explicit 
+type conversion explain with example. 
+Ans: The process of converting one predefined type into another is called Type Conversion. 
+An implicit type conversion is a conversion performed by the compiler. The Java compiler converts 
+all operands up to the type of the largest operand. This is also known as type promotion. e.g. ?c?-
+32  is converted to int type. Where as an explicit type conversion is user defined that forces an 
+expression to be of specific type, this also known as type casting. e.g. (float)(x+y/2) 
+15. Explain the methods print() and println()? 
+Ans: A computer program is written to manipulate a given set of data and to display or print the 
+results. Java supports two output methods that can be used to send the results to the screen. 
+print() method println() method. 
+The print() method sends information into a buffer. This buffer is not flushed until a new line (or 
+end-of-line) character is sent. As a result print() method prints output on one line. 
+The println() method by contrast takes the information provided and displays it on a line followed 
+by a line feed. 
+16. What is an Expression? Explain its different types. 
+Ans: An Expression is any statement which is composed of one or more operands and which 
+returns a value. It may be combination of operators, variables and constants. There are different 
+types of expressions. 
+(1) Constant Expressions: 8 * 12 /2 
+(2) Integral Expressions: formed by connecting integer constants x = (a + b)/2 
+(3) Logical Expressions: a > b    or a!=b 
+(4) Boolean expression: (y+z) >= (x/z) 
+17. Mention two different styles of expressing a comment in a program. [2005] 
+Ans: The two ways of inserting a comments in a program are: 
+(i) using //                     single line comments 
+(ii) using /*     */           multiple line comments 
+18. What is a compound Statement? Give an Example. [2005] 
+Ans: It is a block of code containing more then one executable statement. In Java the { } is called 
+block and the statements written under {} is called compound statements or block statement. The { 
+} opening and closing sc   aces indicates the start and end of a compound statement. 
+
+=== PAGE 14 ===
+for(int i=1;i<=5;i++) 
+{ 
+System.out.println(?Hello?); 
+System.out.println(?How?); 
+System.out.println(?are you??); 
+} 
+ 
+CH-7: INPUT IN JAVA 
+1. What are the different types of variables? How are they initialized? 
+Ans.  Local variables (declared within the methods) must be declared and initialized before 
+they are used. Local variables are explicitly initialized and are not initialized to default values. 
+Class and instance variables (declare inside the class but outside the method) can only be 
+declared and used but are assigned default values. 
+2. What are the default values of the following primitive types: 
+Ans.  boolean- false 
+int-0 
+char=?\u0000? 
+long=0 
+float=0.0 
+ 
+3. What is the default value of reference data type ? 
+Ans. The default value of  reference datatype  is a null value. 
+4. What are the different ways to input values in Java? 
+     Ans. The various ways to input values in an operation are: 
+? 
+By using assignment 
+? 
+By using function argument 
+? 
+By using Scanner class 
+? 
+By using Input Stream Reader class 
+5. What are the advantages of input through Scanner class?  
+Ans. Program logic is simple and Scanner class has various methods to manipulate input data. 
+String manipulation is easy as each word is obtained as a token and handled separately. 
+6. Differentiate between next ( ) and nextLine( ). 
+Ans. The next( ) accepts the next token from the Scanner object as a string.  
+
+=== PAGE 15 ===
+nextline( ) accepts a line of text . 
+7. What is the function of a Scanner class? In which package does it belong? 
+Ans. The Scanner class is a class in java.util, which allows the user to read values of 
+various types, from either keyboard or a file. 
+8. Name the functions of the Scanner that is used to: 
+a. Accept a number of long data type 
+b. Accept a group of 
+alphabets. Ans. a. 
+nextLong( ) 
+b. nextLine() 
+9. What is a bug? What is debugging? 
+Ans. A bug is an error, flaw, failure or fault in a program or system that causes it to 
+produce an incorrect or unexpected result, or to behave in unintended ways. 
+The process of removing a bug is called debugging. 
+10. What are the different type of errors that may occur in a Java program? 
+Ans. Errors in a program in Java can sc   oadly be classified into three categories: 
+? Syntax errors 
+? Logical errors 
+? Run-time errors 
+11. What are syntax errors? Give two examples. 
+Ans. A syntax error is an error in the syntax of a sequence of characters or tokens that is 
+intended to be written in a particular program. 
+The common syntax errors are: 
+? Missing semicolon 
+? Mismatched sc   aces in classes and methods. 
+12. What are run-time errors? Give two examples. 
+Ans. An error that occurs during the execution of a program is called run time error. 
+The run-time errors are: 
+? Dividing an integer by zero. 
+? Accessing an element that is out of bounds of an array. 
+ 
+13. What are logical errors. Give examples. 
+Ans. These errors are due to the fact that the specifications are not respected. The program is 
+compiled and executed without errors but does not generate the desired output. 
+The logical errors  
+public static int sum(int a,int b) 
+
+=== PAGE 16 ===
+{return a-b;}//return wrong value i.e. difference instead of sum 
+ 
+14. Write the difference between close( ) and exit( ). 
+Ans. The close( ) of the Scanner class closes the scanner and allow Java to reclaim the 
+Scanner?s memory. 
+System. exit( 0) stops the execution of the program immediately  
+ 
+CH 8: MATHEMATICAL LISC   ARY FUNCTIONS 
+1. 
+Name the class that is used for different mathematical functions. Give an example 
+of a mathematical function. 
+Ans. Math class. E.g of mathematical functions are Math.pow( ) , Math.sqrt( ) 
+2. 
+Give the output of the following expressions. 
+i. If x = -9.99, calculate Math.abs(x); 
+ii. If x = 9.0, calculate Math.sqrt(x); 
+Ans. 
+i. 
+9.99 
+ii. 
+3.0 
+ 
+A. Give the output of the following functions: 
+1. 
+Math.floor(-126.349) 
+Ans. -127.0 
+2. 
+Math.max(45.6,17.3) 
+Ans. 45.6 
+3. 
+Math.min(0.1,0.0) 
+Ans. 0.0 
+4. Math.
+pow(4,3) 
+Ans. 64.0 
+5. 
+Math.sqrt(625)  
+Ans. 25.0 
+6. 
+Math.csc   
+t(125)  
+Ans. 5.0 
+
+=== PAGE 17 ===
+7.
+ 
+Math.max(11,1
+1) 
+Ans. 11 
+8. 
+Math.ceil(-
+12.56) 
+Ans. -12.0 
+9. Math.floor(15.3
+6) Ans. 15.0 
+10. 
+Math.round(
+146.5) Ans. 147.0 
+B. 
+Write equivalent Java expressions for the following: 
+i. 
+Ans. Math,sqrt(a+b) 
+i. 
++
+ 
+Ans. 1/3.0*Math.pow(a,3)+1/4.0*Math.pow(b,3) 
+ 
+ii. 
+ 
+ 
+ 
+Ans. s=u*t+1/2.0*a*Math.pow(t,2); 
+iii. 
+d = 
+Ans. d=Math.sqrt(l*l+b*b); 
+ 
+  v. 
+ 
+ 
+Ans. Math.cbrt(5*x*x+y)/Math.pow(x+11*y*y*y, 1/4.0) 
+ 
+vi.
+ 
+                 
+Ans.(x+y)/Math.sqrt(Math.abs(x-y)) 
+ 
+CH 9: CONDITIONAL CONSTRUCTS IN JAVA 
+1. What are the three constructs that govern statement flow? 
+a ? b 
+l 2 ? b 2 
+
+=== PAGE 18 ===
+Ans: The three constructs that governs statement flow are: Sequence, Selection and Iteration 
+constructs. 
+2. What is a selection/conditional statement? Which selection statement does Java provides? 
+Ans: A selection statement is the one that is used to decide which statement should be executed 
+next. This decision is based upon a test condition. The selection statements provided by Java are: 
+if-else and switch. The conditional operator ?: can also be used to take simple decision. 
+3. What is an ?if? statement? Explain with an example. 
+Ans: The ?if? statement helps in selecting one alternative out of the two. The execution of ?if? 
+statement starts with the evaluation of condition. The ?if? statement therefore helps the programmer 
+to test for the condition. General form of ?if? statement. 
+if(expression) statement 
+if(marks>=80) 
+System.out.println(?Grade A?); 
+4. What is the significance of a test-condition in an if statement? 
+Ans: It is the test condition of an if statement that decides whether the code associated with the if 
+part or the one associated with the else part should be executed. The former is executed if the test 
+condition evaluates to true and the latter works if the condition evaluates to false. 
+5. Write one advantage and one disadvantage of using ?: in place of an if. 
+Ans: Advantage: It leads to a more compact program. 
+ Disadvantage: Nested ?: becomes difficult to understand or manage. 
+1. What do you understand by nested ?if? statements? 
+OR 
+1. Explain with an example the if-else-if construct. [2007] 
+Ans: A nested ?if? is an statement that has another ?if? in its body or in it?s appearance. It takes the 
+following general form. 
+if(ch>=?A?) 
+{ 
+if(ch<=?Z?) 
+++upcase; 
+else 
+++other; 
+} 
+6. What is the problem of dangling-else? When does it arise? What is the default dangling-
+else matching and how it is overridden? 
+
+=== PAGE 19 ===
+Ans: The nested if-else statement introduces a source of potential ambiguity referred to as 
+dangling-else problem. This problem arises when in a nested if statement, number of if?s is more 
+than the number of else clause. The question then arises, with which if does the additional else 
+clause property match. For Example 
+if(ch>=?A?) 
+if(ch<=?Z?) 
+++upcase; 
+else 
+++other; 
+The indentation in the above code fragment indicates that programmer wants the else to be with 
+the outer if. However Java matches an else with the preceding unmatched if. One method for over-
+riding the default dangling-else matching is to place the last occurring unmatched if in a compound 
+statement, as it is shown below. 
+if(ch>=?A?) 
+{ 
+if(ch<=?Z?) 
+++upcase; 
+} 
+else 
+++other; 
+7. Compare  IF with ?:(Ternary operator)? 
+Ans: (i) Compare to IF sequence, ?: offer more concise, clean and compact code, but it is less 
+obvious as compared to IF. (ii) Another difference is that the conditional operator ?: produces an 
+expression, and hence a single value can be assigned, for larger expression If is more flexible. (iii) 
+When ?: operator is used in its nested form, it becomes complex and difficult to understand. 
+8. What is a switch statement? How is a switch statement executed? 
+Ans: Switch statement successively tests the value of an expression against a set of integers or 
+character constants. When a match is found, the statements associated with the constants are 
+executed. The syntax : 
+switch(expression) 
+{ 
+case constants : statements; sc   eak; 
+case constants : statements; sc   eak;  
+default: 
+} 
+The expression is evaluated and its values are matched against the value of the constants 
+specified in the case statements. When a match is found, the statements sequence associated 
+with that case is executed until the sc   eak statement or the end of switch statement is reached. 
+9. What is the significance of sc   eak statement in a switch statement? 
+Ans: In switch statement when a match is found the statement sequence of that case is executed 
+until a ?sc   eak? statement is found or the end of switch is reached, when a ?sc   eak? statement is 
+found program execution jumps to the line of code following the switch statement. 
+
+=== PAGE 20 ===
+10. What is a control variable in a switch case? 
+Ans: A control variable in switch case is one which guides the control to jump on a specified case. 
+e.g. switch(x), here ?x? is the control variable. 
+11. What is a ?fall through?? 
+Ans: The term ?fall through? refers to the way the switch statement executes its various case 
+sections. Every statement that follows the selected case section will be executed unless a sc   eak 
+statement is encountered. 
+12. What is the effect of absence of  break  in a switch statement? 
+Ans: Absence of break statement in a switch statement leads to situation called ?fall through? 
+where once a matching case is found the subsequence case blocks are executed unconditionally 
+13. Write one limitation and one advantage of switch statement? 
+Ans: Advantage: More efficient in case a value is to be tested against a set of constants. 
+Disadvantage: switch can test only for quality, so for the rest of comparisons one needs to use if-
+else. 
+14. Discuss when does an if statement prove more advantageous then switch statement. 
+Ans: In the following case if statement proves to be more advantage over switch statement: (i) 
+When a range of values need to be tested for. (ii) When relation between multiple variables needs 
+to be tested. (iii) When multiple conditions need to be tested. (iv) When expressions having a data 
+type other then integer or character need to be tested. 
+15. When does switch statement prove more advantageous over an if statement? 
+Ans: The switch statement is more advantageous then the if statement when the test expression 
+whose data type is either of byte, short, character, integer or long is to be tested against a set of 
+constants. The reason being that the switch statement evaluates the expression once whereas the 
+equivalent if statement evaluates the expression repeatedly. 
+16. Explain, with the help of an example, the purpose of default in a switch statement. [2005] 
+Ans: The default section is an optional part of the switch statement and the statement written 
+under default clause are executed when no matching case is found. 
+switch(n) 
+{ 
+case 1: System.out.println(?Sunday?); break; 
+case 2: System.out.println(?Monday?); break; 
+case 3: System.out.println(?Tuesday?); break; 
+case 4: System.out.println(?Wednesday?); break; 
+case 5: System.out.println(?Thursday?); break; 
+case 6: System.out.println(?Friday?); break; 
+case 7: System.out.println(?Saturday?); break; 
+
+=== PAGE 21 ===
+default :  System.out.println(?Invalid Input?); 
+} 
+17. Differentiate between if and switch statements. [2006] 
+Ans: Both are used as selection statements, there is some difference in their operations. (i) switch 
+can only test for equality, where as if can evaluate a relational or logical expression. (ii) it 
+statement can handle ranges , where as switch case level must be a single value. (iii) if statement 
+can handle floating point test also, where as the switch case labels must be an integer or 
+character. 
+ 
+Chapter  10 : Iteration constructs in Java 
+ 
+1. What are iteration statements? Name the iteration statements provided by Java? 
+Ans: Iteration statements are statements that allow a set of instructions to be executed 
+repeatedly till some condition is satisfied. The iteration statements provided by Java are: 
+for loop, while loop, do-while loop. 
+2. Name the Elements that Control a Loop. 
+Ans. Every loop has elements that control its execution. These elements can be grouped 
+under the following in general: 
+? Initialization Expression(s). Before entering a loop, the variable that controls the 
+execution of it is called initialization. The initialization of a variable may be inside a loop or 
+outside it. Whatever it may be it is executed only once before the iteration starts. 
+? Test Expression. The test-expression (also called test-condition) is a condition, which 
+decides whether the loop body will be executed or not. Till the test expression evaluates to 
+true, the loop body gets executed otherwise the loop is terminated. 
+? Update Expression(s). The update expression(s) change the value(s) of the control 
+variable(s). The update expression(s) is usually made to be executed; before the next 
+iteration. 
+The Body of the Loop. The statements that are executed repeatedly (as long as the, test 
+expression is true) form the body of the loop 
+3. What is the difference between entry controlled and exit controlled loop? or 
+What is the difference between while and do-while loop? 
+Ans: While loop is known as entry controlled loop and do-while loop is known as exit-
+controlled loop. The differences between these two loops are: (1) In while loop the test 
+expression is evaluated at the beginning where as in do-while loop test expression is 
+evaluated at the end, after the body of the loop. (2) In while loop if the test expression is 
+false loop does not continued but in do-while whatever the test expression may be the loop 
+execute at least once. 
+4. Explain the difference between break and continue with an example. [2005] [2008] 
+Ans: Both statements are used as a jumped statement. But there is a difference between 
+Break and Continue statement. The break statement terminate the loop, but the continue 
+statement skip the rest of the loop statement and continues the next iteration of the loop. 
+e.g. of Break Statement 
+
+=== PAGE 22 ===
+int i=0; 
+while(i<=10) 
+{ 
+i++; 
+if(i==5) 
+break; 
+System.out.println(i); 
+} 
+e.g. of Continue Statement 
+int i=0; 
+while(i<=10) 
+{ 
+i++; 
+if(i==5) 
+continue; 
+System.out.println(i); 
+} 
+5. Compare and discuss the suitability of three loops in different situation? 
+Ans: (i) The for loop should be preferred if number of iteration is known beforehand. (ii) 
+The while loop should be preferred if the number iteration is dependent upon some control 
+variable. (iii) The do-while loop should be preferred if the number of iterations is dependent 
+upon user response. 
+6. Explain the term for loop with an example. [2005] 
+Ans: In Java the ?for? statement is the most common iterative statement. The general 
+syntax of the for loop is, 
+for(initialization; test-expression; increment) 
+{ 
+body of the loop 
+} 
+This loop is executed at initial value, condition and increment. Three statement separated 
+by semi colons are placed within the parenthesis. For example: 
+for(int i=1;i<=10;i++) 
+{ 
+System.out.println(i); 
+} 
+7. Give an example to show how multiple initialization and updation as performed in a 
+for-loop. 
+Ans. 
+int i, j; 
+for(i=1, j=10 ; i<=10 ; j-- , i++) 
+{ 
+System.out.println(?i=? +i+ ? ?+ ?j=?+j); 
+} 
+8. What do you meant by an infinite loop? Give an example. [2008] 
+
+=== PAGE 23 ===
+Ans: Infinite loop is an endless loop whose number of iterations is not fixed. 
+eg: for(;;) 
+System.out.println(?School?); 
+9. Differentiate Null loop and Infinite loop. 
+Ans: A Null loop does not contain any statement to repeat where as infinite loop repeats 
+execution of the statements for endless iterations. 
+e.g. of null loops  for(int i=1;i<=10;i++); 
+e.g. for infinite loop  for(int i=10;i>=1;i++) 
+ 
+10. What do you mean by delay loop? 
+Ans: A null loop is also called delay loop which does not repeat the execution of any 
+statement but keeps the control engaged until the iterations are completed. 
+11. Compare loops according to its usage. 
+Ans. The for loop is appropriate when you know in advance how many times the loop will be 
+executed, i.e., the first and the last limit is already known. The other two loops while and 
+do-while loops are more suitable in situations when it is not known in advance when the 
+loop will terminate. The while should be preferred when you may not want to execute the 
+loop-body even once (in case the test condition is false), and the do-while loop should be 
+preferred when you?re sure you want to execute the loop-body at least once. 
+12. Give the general syntax of a do-while loop. How do you create infinite loops using do-
+while loop structure? 
+Ans. The syntax of the do-while loop is: 
+<initialization> 
+ do 
+{ 
+    statement; 
+    <update expression> 
+} while (condition); 
+To create an infinite  loop you need to make the condition always result to true. For 
+example,  
+do 
+{ 
+System.out.println(?Hello?);; 
+}while (true); 
+13. Give the general syntax of a while-loop. How do you create infinite loops using a while-
+loop structure? 
+Ans. The syntax of a while loop is, 
+<initialization> 
+while (condition or test-expression) 
+{ 
+body-of-the-loop; 
+<update expression> 
+} 
+To create an infinite loop you need to make the condition always result to true. For 
+example, do 
+
+=== PAGE 24 ===
+while (true) 
+{ 
+System.out.println(?Hello?);; 
+} 
+ 
+14. State one similarity and one difference between while and do-while loop. [2005] 
+Ans: Similarity: In both loops there is a chance to forget the increment statement inside the 
+loop. Difference: In while loop the test expression is evaluated at the beginning where as 
+in do-while loop test expression is evaluated at the bottom, after the body of the loop. 
+15. Name two jump statements and their use. 
+Ans. The ?break? statement is used to exit from a loop or switch block. 
+The ?continue? statement is used to skip the remaining statements in a loop and continue 
+with the next iteration. 
+ 
+Chapter 11: Nested loops 
+1. What is nested loop? 
+Ans. When a loop construct lies inside the body of another loop, it is called nested loop 
+2. What is the use of labels in Java?  
+Ans. Java provides a mechanism for exiting nested loops. We can label any of the loops 
+and switches with <label>: statement. Labelled blocks are useful with break and continue. 
+      We use  break <label> to break out of statements 
+      We also use continue <label> to return to the next iteration in a labeled loop. 
+3. Write the syntax of label statement. 
+Ans.  Syntax: 
+<label>: statement 
+We label a statement by placing a legal Java identifier followed by colon ( : ) before the 
+statement. 
+4. Write an example of labeled break within nested for loop 
+Ans. Example of labeled break: 
+bk: 
+for ( i=0 ; i<5 ; i++ ) { 
+ 
+for ( j =0, j<3 ; j++ ) { 
+ 
+if ( a = b ){ 
+ 
+ 
+c=1; break bk; 
+ 
+ 
+} 
+ 
+} 
+} 
+5. What are Nested-loops? Give an example of a nested for-loop to show its functionality. 
+ Ans. A loop within another loop is called nested loop. For example, 
+int x , y;  
+       for(x=1;x<=3;x++) // outer loop 
+{ 
+for(y=1; y<=3 ; y++) // inner loop 
+{ 
+
+=== PAGE 25 ===
+System.out.println(x+ ? ? +y);  
+} 
+} 
+ 
+ 
+ 
+ 
+Chapter 12 : Computing and Ethics 
+ 
+Answer the following Questions. 
+1. What is Computer Ethics? 
+Ans. Computer ethics deals with the procedures, values and practices that govern the 
+process of consuming computing technology and its related disciplines without damaging 
+or violating the moral values and beliefs of any individual, organization or entity. 
+ 
+Computer ethics refer to the behavior and ways of thinking of computer users in 
+situations where a choice can affect the dignity and well being of the other. 
+ 
+2. What is software ethics? 
+Ans. Software ethics refer to ensuring that the software being used is not pirated or 
+unauthorized. 
+ 
+3. Why is unauthorized copying of software illegal? 
+Ans.  Unauthorized copying of software is illegal because: 
+? It deprives the programmer of fair return of their work 
+? It harms the community indirectly as it results in price-rises and inhibits the 
+development of new software products. 
+ 
+4. Name the two alternatives to unauthorized copying. 
+Ans.  The two alternatives are to use public domain software or shareware. 
+ 
+5. Differentiate between public domain software and shareware. 
+Ans.  The differences are as follows: 
+? Public Domain Software:  the software that is dedicated to public domain which means 
+that the software is not subjected to any copyright restrictions. It can be copied and shared 
+freely. 
+? Shareware : the software that is encouraged by the developer to be copied and 
+distributed freely for a nominal amount or free registration. 
+ 
+6. What is Software Piracy? How does shareware deal with software piracy? 
+Ans. Software piracy is used to describe the act of illegally using, copying or distributing 
+software without ownership or legal rights. 
+Shareware is a good way to market software. It allows consumers to evaluate an 
+application prior to making a purchase decision. They can easily determine if it meets their 
+business or personal needs, which usually results to a satisfied customer. 
+ 
+7. List major ethical issues. 
+Ans.  Major ethical issues are: 
+
+=== PAGE 26 ===
+? Individual?s right to privacy 
+? Intellectual property rights 
+? Accuracy to information 
+ 
+8. Why do you think in developing countries like India, it is difficult to stop software piracy? 
+ Ans. Software piracy is hard to stop for several reasons: 
+a. It?s not a violent crime, so eliminating the criminals by killing them is not really an 
+option. As such, the only remaining option is a legal approach - charging them with a crime 
+and threatening them with prison if they don?t quickly agree to a guilty plea. 
+b. Sharing cracked software is easy and hard to detect. 
+c. People who can afford buying movies and games generally do so; people who cannot 
+afford it will either pirate them or not get them at all. 
+d. The price tag associated with legal software is generally high. 
+ 
+9. What are the different ways of stopping Software Piracy?  
+Ans. The different ways to stop software piracy are: 
+? Educate young minds on the licensing requirements of software purchases 
+? Conduct a self-audit of your software licenses 
+? Acquire any licenses needed for full compliance 
+? The most widely used method is the license key; code that is built into an application to 
+require a valid key to unlock the software. 
+10. What is Intellectual Property right?  
+Ans.  The intellectual property rights are the rights of the owner of information to decide 
+how much information is to be exchanged, shared or distributed. It gives the owner the 
+right to decide the price to do so. 
+ 
+11. List two main areas of Industrial Property. 
+ Ans. Copyright and Trademark. 
+ 
+12. What are the two major threats to security of software and information? 
+Ans.   The two major threats are hacking (attempts to gain information from undisclosed 
+areas )  and piracy ( unauthorized duplication of software ). 
+13. How can spamming be reduced? 
+Ans. By using these precautions you can greatly mitigate what spam you do receive and 
+prevent most spam from ever happening. 
+? Be careful where you enter your email at. 
+? Create or use disposable email addresses for websites you do not trust. 
+? Never open spam when you receive it. 
+? Keep your computer virus and malware free. 
+? If your friends are sending you emails sent to a large recipient list, request that they use 
+BCC instead of TO or CC, so that other recipients cannot see your email address; or 
+request they stop including you if you do not want to receive the emails. 
+? Do not list your email address on your website or anywhere the public can access it. 
+ 
+14. Name the common forms of software piracy. 
+
+=== PAGE 27 ===
+Ans.  The common forms of software piracy are: 
+? Softlifting - purchasing a single licensed copy and sharing contrary to the license terms 
+? Software counterfeiting ? installing and selling copyrighted software 
+ 
+15. How is phishing and pharming performed to perform Cybercrime? 
+Ans. Phishing is a fraudulent practice of sending emails purporting to be from reputable 
+companies in order to induce individuals to reveal personal information, such as 
+passwords and credit card numbers. 
+Pharming is the fraudulent practice of directing Internet users to a bogus website that 
+mimics the appearance of a legitimate one, in order to obtain personal information such as 
+passwords, account numbers, etc. 
+ 
+ 
+ 
+16. What are the different types of Cybercrimes?  
+ 
+Ans. The different types of cyber crime are: 
+? Financial fraud crimes 
+? Cyberterrorism 
+? Cyberextortion 
+? Cyberwarfare 
+? Computer as a target 
+? Computer as a tool 
+ 
+ 
+17. How are Hackers different from Crackers? 
+Ans. Hackers are those computer experts which break into computers to check any 
+vulnerably so that no one can misuse the services. These are really intelligent and smart 
+persons who use their ability to protect the community from cyber crimes and computer 
+thefts. 
+      Whereas, Crackers are those people who use their knowledge to do computer crimes 
+for gaining popularity among peoples and to earn fast money. They break into computer 
+networks for their enjoyment and cause harm to them. These persons do not have real 
+knowledge and know something about using the particular software to break into 
+computers. 
+ 
+Answer as directed: 
+1. Convert the following segment into an equivalent do loop.  
+int x,c; 
+for( x=10, c=20; c>10 ; c=c-2 ) 
+x++; 
+Ans. 
+int x , c; 
+ x=10; c=20; 
+do 
+{ 
+c = c - 2; 
+
+=== PAGE 28 ===
+ x++; 
+} while ( c > 10 ); 
+ 
+2. Analyze the following program segment and determine how many times the body of loop 
+will be executed (show the working). 
+x=5; 
+y=50; 
+while(x<=y) 
+{ 
+y=y/x; 
+System.out.println(y); 
+} 
+Ans. 
+ 
+X 
+Y 
+x<=y 
+y=y/x 
+5 
+50 
+true 
+10 
+5 
+10 
+true 
+2 
+5 
+2 
+false 
+- 
+The loop executes twice. 
+ 
+ 
+ 
+3. Convert the following segment into equivalence for loop.  
+int i=0; 
+while(i<=20) 
+{ 
+System.out.print(i+? ?); i++; 
+} 
+Ans. 
+int i; for(i=0;i<=20;i++) 
+{ 
+System.out.print(i+ ? ?); 
+} 
+ 
+4. What will be the output of the following code?  
+int m=2; 
+int n=15; 
+for(int i = 1; i<5; i++); 
+m++; ?n; 
+System.out.println(?m=? +m); 
+ System.out.println(?n=?+n); 
+ Ans. m=3 n=15 
+
+=== PAGE 29 ===
+ 
+Sample Programs: 
+ 
+ 
+PROGRAMME    1: 
+/* to check and display whether a number is even or odd */ 
+import   java.util.*; 
+ class   class9 
+{ 
+     
+public   static   void   main(String    args[ ])            
+    
+ { 
+          Scanner      sc   =new     Scanner (System.in); 
+       
+  int   n; 
+       
+  System.out.println("Enter a number"); 
+           n=sc.nextInt(); 
+        
+ if(n%2==0) 
+         { 
+             
+ System.out.println("The number is EVEN"); 
+    
+} 
+         else 
+        
+{ 
+              
+ 
+System.out.println("The number is ODD"); 
+         } 
+    
+ } 
+ } 
+ 
+ 
+PROGRAMME    2: 
+/* to check and display whether a number is divisible by 15 or not */ 
+import   java.util.*; 
+ class   class9 
+{ 
+     
+public   static   void   main(String   args[ ])                         
+     
+{ 
+          
+ Scanner                sc   =new     Scanner            (new    
+InputStreamReader(System.in)); 
+          
+int   n; 
+          
+System.out.println("Enter a number"); 
+          
+n=sc .nextInt(); 
+          
+if(n%15==0) 
+          
+{ 
+             
+ 
+ 
+System.out.println("The number is divisible by 15"); 
+          
+} 
+          
+else 
+          
+{ 
+              
+ 
+ 
+System.out.println("The number is not divisible by 15"); 
+          
+} 
+     
+} 
+} 
+ 
+
+=== PAGE 30 ===
+PROGRAMME    3: 
+/* to check and display whether the number has single digit or two digit or more */ 
+import    java.util.*; 
+ class   class9 
+{ 
+     
+public   static   void   main(String   args[  ])                         
+     
+{ 
+          
+ Scanner   sc   =new     Scanner (System.in); 
+          
+int  n,p; 
+          
+System.out.println("Enter a number"); 
+          
+n=sc .nextInt(); 
+          
+p=Math.abs(n); 
+          
+if(p>=0 && p<=9) 
+          
+{ 
+             
+ 
+ 
+System.out.println("The number has single digit"); 
+          
+} 
+          
+else   if(p>=10 && p<=99) 
+          
+{ 
+              
+ 
+ 
+System.out.println("The number has two digits"); 
+          
+} 
+          
+else 
+          
+{ 
+             
+ 
+ 
+System.out.println("The number has more than 2 digits"); 
+          
+} 
+     
+} 
+  } 
+PROGRAMME    4: 
+/* to check and display whether the number +ve or -ve or nutral */ 
+import   java.util.*; 
+ class   class9 
+{ 
+    
+ public   static   void   main(String   args[ ])                       
+    
+{ 
+          
+ Scanner      sc   =new     Scanner(System.in); 
+          
+int  p; 
+          
+System.out.println("Enter a number"); 
+          
+p=sc .nextInt(); 
+          
+if(p>0 ) 
+          
+{ 
+             
+ 
+ 
+System.out.println("The number POSITIVE"); 
+          
+} 
+          
+else   if(p<0) 
+          
+{ 
+              
+ 
+ 
+System.out.println("The number is NEGATIVE"); 
+          
+} 
+          
+else 
+          
+{ 
+             
+ 
+ 
+System.out.println("The number is NUTRAL"); 
+          
+} 
+     
+} 
+  } 
+ 
+ 
+ 
+
+=== PAGE 31 ===
+ 
+ 
+PROGRAMME    5: 
+/* to calculate and display the commission of a salesman (Flat Rate Based) */ 
+import   java.util.*; 
+ class   class9 
+{ 
+       
+ public   static   void   main(String   args[ ])                       
+          { 
+         Scanner      sc   =new   Scanner(System.in); 
+       double   sales,comm; 
+        System.out.println("Enter the sales amount"); 
+        sales=sc.nextDouble(); 
+       if(sales >0 && sales <= 50000 ) 
+        { 
+             
+comm=sales*0.02; 
+             
+System.out.println("The commission amount is : "+ comm); 
+        } 
+        else    if(sales >0 && sales <= 50000 ) 
+        { 
+             
+comm=sales*0.04; 
+             
+System.out.println("The commission amount is : "+ comm); 
+        } 
+        else    if(sales >0 && sales <= 50000 ) 
+        { 
+             
+comm=sales*0.06; 
+             
+System.out.println("The commission amount is : "+ comm); 
+        } 
+        else   if(sales >0 && sales <= 50000) 
+        { 
+             
+comm=sales*0.08; 
+             
+System.out.println("The commission amount is : "+ comm); 
+        } 
+        else 
+        { 
+             
+System.out.println("The amount you have given is not a valid sales 
+amount"); 
+
+=== PAGE 32 ===
+        } 
+         } 
+ } 
+ 
+ 
+PROGRAMME    6: 
+/* to calculate and display the income tax (Slab Rate Based) */ 
+import   java.util.*; 
+ class   class9 
+{ 
+     
+public   static   void   main(String   args[ ])                       
+     
+{ 
+          
+ Scanner      sc   =new   Scanner (System.in); 
+        
+ 
+double  income,tax; 
+          
+System.out.println("Enter the yearly income"); 
+          
+Income=sc.nextDouble(); 
+          
+if(income>0 && income <= 200000 ) 
+          
+{ 
+             
+ 
+ 
+tax=0; 
+          
+} 
+          
+else   if(income >200000 && income <= 500000 ) 
+          
+{ 
+             
+ 
+ 
+tax=0+(income-200000)*0.1; 
+          
+} 
+          
+else  if(income >500000 && income <= 1000000 ) 
+          
+{ 
+              
+ 
+ 
+tax=0+200000*0.1+300000*0.2+(income-500000)*0.3; 
+          
+} 
+          
+else  
+          
+{ 
+              
+ 
+ 
+tax=0+200000*0.1+300000*0.2+500000*0.3+(income-1000000)*0.4; 
+          
+} 
+          
+System.out.println("The Income tax to be paid is : "+ tax); 
+                     
+     
+} 
+  } 
+PROGRAMME    7: 
+
+=== PAGE 33 ===
+/* to calculate and display the FARE (Slab Rate Based) */ 
+import   java.util.*; 
+ class   class9 
+{ 
+     
+public   static   void   main(String   args[ ])                       
+     
+{ 
+        
+ 
+ Scanner     sc   =new   Scanner(System.in); 
+        
+ 
+double  dist,famt; 
+        
+ 
+System.out.println("Enter the distance covered"); 
+        
+ 
+dist=sc.nextInt( ); 
+        
+ 
+if(dist>0 && dist <=100 ) 
+          
+{ 
+             
+ 
+ 
+famt=100; 
+          
+} 
+        
+ 
+else   if(dist >100 && dist <= 500 ) 
+          
+{ 
+             
+ 
+ 
+famt=100+(dist-100)*2; 
+          
+} 
+        
+ 
+else  if(dist >500 && dist <= 1000 ) 
+          
+{ 
+              
+ 
+ 
+famt=100+400*2+(dist-500)*3; 
+          
+} 
+        
+ 
+else  
+          
+{ 
+              
+ 
+ 
+famt=100+400*2+500*3+(dist-1000)*4; 
+          
+} 
+          
+if(dist>2000) 
+          
+{ 
+             
+ 
+ 
+famt=famt+famt*0.02; 
+          
+} 
+          
+System.out.println("The total fare to be collected is : "+ famt); 
+    
+} 
+} 
+PROGRAMME    8: 
+/* to check either leap year or not or +ve or -ve as per user's choice(Option Based) */ 
+import   java.util.*; 
+ class   class9 
+
+=== PAGE 34 ===
+{ 
+     
+public   static   void   main(String   args[ ])                         
+     
+{ 
+        
+ 
+ Scanner     sc   =new      Scanner(System.in); 
+        
+ 
+int  n,ch; 
+        
+ 
+System.out.println("Press 1 to check leap year , 2 to check +ve or -ve"); 
+        
+ 
+System.out.println("Enter your choice"); 
+        
+ 
+ch=sc.nextInt( ); 
+          
+if(ch==1 ) 
+          
+{ 
+             
+ 
+System.out.println("enter a year"); 
+             
+ 
+n=sc.nextInt(); 
+             
+ 
+if(n%100==0) 
+             
+ 
+{ 
+                
+ 
+ 
+if(n%400==0) 
+                
+ 
+ 
+{ 
+                    
+ 
+ 
+ 
+System.out.println("LEAP YEAR"); 
+                 
+ 
+ 
+} 
+                 
+ 
+ 
+else 
+                 
+ 
+ 
+{ 
+                      
+ 
+ 
+System.out.println("NOT  A LEAP YEAR"); 
+                 
+ 
+ 
+} 
+             
+ 
+ 
+} 
+ 
+ 
+ 
+else 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+ 
+if(n%4==0) 
+ 
+ 
+ 
+ 
+ 
+System.out.println("LEAP YEAR"); 
+ 
+ 
+ 
+ 
+else 
+ 
+ 
+ 
+ 
+ 
+System.out.println("NOT A LEAP YEAR"); 
+ 
+ 
+ 
+ 
+ 
+          
+ 
+   } 
+ 
+ 
+} 
+              
+ 
+else if(ch==2) 
+          
+{ 
+             
+ 
+ 
+System.out.println("enter a number"); 
+             
+ 
+ 
+n=sc.nextInt(); 
+             
+ 
+ 
+if(n>0) 
+                 
+ 
+ 
+System.out.println("POSITIVE"); 
+             
+ 
+ 
+else  if(n<0) 
+                 
+ 
+ 
+System.out.println("NEGATIVE"); 
+             
+ 
+ 
+else 
+                
+ 
+ 
+System.out.println("NUTRAL"); 
+           
+} 
+        
+ 
+else 
+             
+ 
+ 
+System.out.println("WRONG CHOICE"); 
+     
+} 
+  } 
+PROGRAMME    9: 
+
+=== PAGE 35 ===
+/* to check and display the nature of the quadratic equation */ 
+import   java.util.*; 
+ class   class9 
+{ 
+    
+ public   static   void   main(String   args[ ])                       
+     
+{ 
+        
+ 
+ Scanner     sc   =new   Scanner(System.in); 
+        
+ 
+int   a,b,c,d; 
+        
+ 
+double   x1,x2; 
+        
+ 
+System.out.println("Enter the value of a,b and c"); 
+        
+ 
+a=sc.nextInt( ); 
+        
+ 
+b=sc   .nextInt(); 
+        
+ 
+c=sc   .nextInt(); 
+        
+ 
+d=b*b-4*a*c; 
+          
+if(d==0) 
+          
+{ 
+            
+ 
+System.out.println("The roots are real and equal"); 
+            
+ 
+x1=(-1*b)/(2*a); 
+            
+ 
+System.out.println("The root is :"+x1); 
+          
+} 
+          
+else if(d>0) 
+          
+{ 
+            
+ 
+System.out.println("The roots are real but not equal"); 
+            
+ 
+x1=((-1*b)+Math.sqrt(d))/(2*a); 
+            
+ 
+x2=((-1*b)-Math.sqrt(d))/(2*a); 
+            
+ 
+System.out.println("The first root is :"+x1); 
+            
+ 
+System.out.println("The second root is :"+x2); 
+           
+} 
+        
+ 
+else 
+             
+ 
+ 
+System.out.println("The roots are imaginary"); 
+    
+} 
+} 
+PROGRAMME    10: 
+/* to take day number as input and it will dispaly the day name, assumed that Monday is the 
+starting day of the week */ 
+import   java.util.*;//using  if?.else  if??else 
+ class   class9 
+
+=== PAGE 36 ===
+{ 
+     
+public   static   void   main(String   args[ ])                       
+     
+{ 
+        
+ 
+ Scanner    sc   =new   Scanner (System.in); 
+        
+ 
+int   d; 
+        
+ 
+System.out.println("Enter a value from 1 to 7"); 
+        
+ 
+d=sc.nextInt(); 
+            
+if(d==1) 
+          
+{ 
+            
+ 
+System.out.println("MONDAY"); 
+          
+ } 
+        
+ 
+else   if(d==2) 
+          
+{ 
+            
+ 
+System.out.println("TUESDAY"); 
+          
+ } 
+        
+ 
+else   if(d==3) 
+          
+{ 
+            
+ 
+System.out.println("WEDNESDAY"); 
+          
+}  
+       
+  
+else   if(d==4) 
+          
+{ 
+            
+ 
+System.out.println("THURSDAY"); 
+          
+} 
+  
+        
+ 
+else   if(d==5) 
+          
+{ 
+            
+ 
+System.out.println("FRIDAY"); 
+          
+}  
+        
+ 
+else if(d==6) 
+          
+{ 
+        
+ 
+    
+System.out.println("SATURDAY"); 
+          
+}  
+        
+ 
+else if(d==7) 
+          
+{ 
+            
+ 
+System.out.println("SUNDAY"); 
+          
+} 
+  
+        
+ 
+else  
+          
+{ 
+            
+ 
+System.out.println("INVALID CHOICE"); 
+          
+} 
+    
+ } 
+ } 
+import   java.util.*;//using  switch?.. case?.. 
+ class   class9 
+{ 
+     
+public   static   void   main(String   args[ ])                       
+     
+{ 
+        
+ 
+ Scanner     sc   =new    Scanner (System.in); 
+
+=== PAGE 37 ===
+        
+ 
+int   d; 
+        
+ 
+System.out.println("Enter a value from 1 to 7"); 
+        
+ 
+d=sc.nextInt( ); 
+            
+switch(d) 
+{ 
+case  1: 
+          
+ 
+ 
+System.out.println("MONDAY"); 
+ 
+ 
+ 
+ 
+br eak; 
+case  2: 
+          
+ 
+ 
+System.out.println("TUESDAY"); 
+ 
+ 
+ 
+ 
+br eak; 
+case  3: 
+          
+ 
+ 
+System.out.println("WEDNESDAY"); 
+ 
+ 
+ 
+ 
+break; 
+case  4: 
+          
+ 
+ 
+System.out.println("THURSEDAY"); 
+ 
+ 
+ 
+ 
+break; 
+case  5: 
+          
+ 
+ 
+System.out.println("FRIDAY"); 
+ 
+ 
+ 
+ 
+break; 
+case  6: 
+          
+ 
+ 
+System.out.println("SATURDAY"); 
+ 
+ 
+ 
+ 
+break; 
+case  7: 
+          
+ 
+ 
+System.out.println("SUNDAY"); 
+ 
+ 
+ 
+ 
+break; 
+          
+        
+default : 
+ 
+ 
+ 
+ 
+System.out.println("WRONG CHOICE"); 
+ 
+ 
+} 
+    
+ } 
+ } 
+PROGRAMME    11: 
+/* to display the nature of a character */ 
+import   java.util.*; 
+ class   class9 
+{ 
+     
+public   static   void   main(String   args[ ])                        
+     
+{ 
+        
+ 
+ Scanner    sc   =new    Scanner(System.in); 
+        
+ 
+char   c; 
+        
+ 
+System.out.println("Enter a character"); 
+        
+ 
+c=sc .next( ).chatAt(0); 
+        
+ 
+if(c>='A' && c<='Z' ) 
+
+=== PAGE 38 ===
+          
+{ 
+             
+ 
+ 
+System.out.println("CAPITAL LETTER"); 
+          
+} 
+        
+ 
+else   if(c>='a' && c<='z' ) 
+          
+{ 
+             
+ 
+ 
+System.out.println("SMALL LETTER"); 
+          
+} 
+        
+ 
+else   if(c>='0' && c<='9' ) 
+          
+{ 
+             
+ 
+ 
+System.out.println("DIGIT"); 
+          
+} 
+        
+ 
+else   if(c=='  ' ) 
+          
+{ 
+             
+ 
+ 
+System.out.println("BLANK SPACE"); 
+          
+} 
+          
+else 
+          
+{ 
+             
+ 
+ 
+System.out.println("SPECIAL CHARACTER"); 
+          
+} 
+     
+} 
+} 
+PROGRAMME    12: 
+/* to check the alphabet and then change it to its reverse */ 
+import   java.util.*; 
+ class   class9 
+{ 
+     
+public   static   void   main(String   args[ ])                         
+     
+{ 
+       
+ 
+  Scanner   sc   =new   Scanner(System.in); 
+        
+ 
+char   c; 
+        
+ 
+System.out.println("Enter a character"); 
+        
+ 
+c=sc .next( ).charAt(0); 
+        
+ 
+if(c>='A' && c<='Z' ) 
+          
+{ 
+             
+ 
+ 
+System.out.println("CAPITAL LETTER"); 
+             
+ 
+ 
+System.out.println("ITS SMALL FORM IS : "+(char)(c+32)); 
+
+=== PAGE 39 ===
+          
+} 
+        
+ 
+else   if(c>='a' && c<='z' ) 
+          
+{ 
+             
+ 
+ 
+System.out.println("SMALL LETTER"); 
+             
+ 
+ 
+System.out.println("ITS CAPITAL FORM IS : "+(char)(c-32)); 
+          
+} 
+        
+ 
+else 
+          
+{ 
+             
+ 
+ 
+System.out.println("NOT AN ALPHABET"); 
+          
+} 
+     
+} 
+} 
+PROGRAMME    13: 
+/* to dispaly male old or young OR female old or young*/ 
+import   java.util.*; 
+class   class9 
+{ 
+    
+public   static   void   main(String   args[ ])                         
+     
+{ 
+        
+ 
+ Scanner    sc   =new   Scanner ( System.in); 
+        
+ 
+char   c; 
+        
+ 
+int   age; 
+        
+ 
+System.out.println("Enter your age"); 
+        
+ 
+age=sc.nextInt( ); 
+        
+ 
+System.out.println("Press M or m for male and F or f for female "); 
+        
+ 
+c=sc.next( ).charAt(0); 
+        
+ 
+if(c>='m' || c<='M' ) 
+          
+{ 
+             
+ 
+ 
+if(age>50) 
+             
+ 
+ 
+ 
+System.out.println("OLD MALE PERSON "); 
+             
+ 
+ 
+else 
+             
+ 
+ 
+ 
+System.out.println("YOUNG MALE PERSON"); 
+          
+} 
+        
+ 
+else   if(c>='f' || c<='F' ) 
+          
+{ 
+             
+ 
+ 
+if(age>50) 
+
+=== PAGE 40 ===
+             
+ 
+ 
+ 
+System.out.println("OLD FEMALE PERSON "); 
+             
+ 
+ 
+else 
+             
+ 
+ 
+ 
+System.out.println("YOUNG FEMALE PERSON"); 
+          
+} 
+        
+ 
+else 
+          
+{ 
+             
+ 
+ 
+System.out.println("NOT A VALID OPTION"); 
+          
+} 
+     
+} 
+} 
+PROGRAMME    14: 
+/* to display the nature of the triangle if three sides will be given as input*/ 
+import   java.util.*; 
+class   class9 
+{ 
+    
+ public   static   void   main(String   args[ ])                        
+    
+ { 
+        
+ 
+ Scanner     sc   =new   Scanner (System.in); 
+       
+ 
+ int   a,b,c; 
+       
+ 
+ System.out.println("Enter three sides of a Triangle"); 
+        
+ 
+a=sc.nextInt( ); 
+        
+ 
+b=  sc.nextInt( );      
+ 
+ 
+c=      sc.nextInt( ); 
+ if(a+b>c && b+c>a && a+c>b) 
+        
+ 
+{ 
+             
+ 
+if(a==b && b==c ) 
+             
+ 
+{ 
+                
+ 
+ 
+System.out.println("EQUILATERAL"); 
+             
+ 
+ 
+} 
+             
+ 
+else   if(a==b || b==c ) 
+            
+ 
+ { 
+                
+ 
+ 
+System.out.println("ISOCELEOUS"); 
+             
+ 
+ 
+} 
+             
+ 
+ 
+else 
+             
+ 
+ 
+{ 
+                 
+ 
+ 
+System.out.println("NOT A VALID OPTION"); 
+
+=== PAGE 41 ===
+             
+ 
+ 
+} 
+        
+ 
+} 
+       
+ 
+ else 
+       
+ 
+ { 
+             
+ 
+ 
+System.out.println("Triangle cannot be possible"); 
+       
+ 
+} 
+    
+} 
+} 
+PROGRAMME    15: 
+/*to check and display whether two numbers are amicable pair or not*/ 
+import   java.util.*; 
+class    class9 
+{ 
+     
+public   static  void   main(String   args[])                         
+    
+ { 
+        
+ 
+ Scanner        sc   =new      Scanner(System.in); 
+        
+ 
+int   m,n,sfm=0,sfn=0,i; 
+       
+ 
+ System.out.println("enter two number"); 
+        
+ 
+m=sc.nextInt( ); 
+       
+ 
+ n=sc.nextInt( ); 
+       
+ 
+ for(i=1;i<m;i++) 
+        
+ 
+{ 
+             
+ 
+ 
+if(m%i==0) 
+                 
+ 
+ 
+sfm+=i; 
+        
+ 
+} 
+          
+for(i=1;i<n;i++) 
+          
+{ 
+             
+ 
+ 
+if(n%i==0) 
+                 
+ 
+ 
+sfn+=i; 
+          
+} 
+      
+ 
+ if(sfm==m && sfn==n) 
+       
+ 
+ 
+System.out.println("Amicable Pair"); 
+      
+ 
+ else 
+       
+ 
+ 
+System.out.println("Not Amicable Pair"); 
+       
+} 
+} 
+PROGRAMME    16: 
+/*to check and display whether a number is prime or not*/ 
+import  java.util.*; 
+class   class9 
+{ 
+     
+public   static  void  main(String   args[])          
+     
+{ 
+        
+ 
+ Scanner      sc   =new     Scanner(System.in); 
+        
+ 
+int    n,i,c=0; 
+        
+ 
+System.out.println("enter a number"); 
+        
+ 
+n=sc.nextInt(); 
+        
+ 
+for(i=1;i<=n;i++) 
+          
+{ 
+             
+ 
+ 
+if(n%i==0) 
+
+=== PAGE 42 ===
+                 
+ 
+ 
+c++; 
+          
+} 
+      
+ 
+ if(c==2) 
+      
+ 
+{ 
+          
+ 
+System.out.println("prime number"); 
+       
+ 
+} 
+       
+ 
+else 
+       
+ 
+{ 
+          
+ 
+System.out.println("Not prime number"); 
+       
+ 
+} 
+         
+     
+} 
+} 
+ 
+ 
+ 
+PROGRAMME    17: 
+/*to check and display whether a number is perfect number or not*/ 
+import    java.util.*; 
+class   class9 
+{ 
+    public  static  void  main(String   args[ ])           
+    { 
+        Scanner   sc   =new   Scanner (System.in); 
+       int   n,i,s=0; 
+       System.out.println("enter a number"); 
+       n=sc.nextInt(); 
+       for(i=1;i<n;i++) 
+        { 
+            if(n%i==0) 
+                s=s+i; 
+        } 
+      if(s==n) 
+      { 
+        System.out.println("perfect number"); 
+      } 
+      else 
+      { 
+        System.out.println("Not perfect number"); 
+      } 
+         
+    } 
+} 
+PROGRAMME    18: 
+/*to display HCF and LCM of two numbers*/ 
+import   java.util.*; 
+class   class9 
+{ 
+     
+public  static  void   main(String   args[])          
+     
+{ 
+        
+ 
+ Scanner      sc   =new      Scanner(System.in); 
+       
+ 
+ int   m,n,i,min,hcf=0; 
+        
+ 
+System.out.println("enter two numbers"); 
+        
+ 
+m= sc.nextInt( ); 
+
+=== PAGE 43 ===
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+min=Math.min(m,n); 
+        
+ 
+for(i=1;i<min;i++) 
+          
+{ 
+             
+ 
+ 
+if(m%i==0 && n%i==0) 
+                
+ 
+ 
+ hcf=i; 
+        
+ 
+ } 
+       
+          
+System.out.println("HCF of "+m+ " and "+n+" is : "+hcf); 
+          
+System.out.println("LCM of "+m+ " and "+n+" is : "+ ((m*n)/hcf)); 
+     
+} 
+} 
+PROGRAMME    19: 
+/*to check and display whether two numbers are co-prime or not*/ 
+import   java.util.*; 
+class  class9 
+{ 
+    
+ public  static   void   main(String   args[])            
+     
+{ 
+        
+ 
+ Scanner     sc   =new     Scanner (System.in); 
+        
+ 
+int    m,n,i,min,hcf=0; 
+        
+ 
+System.out.println("enter two numbers"); 
+        
+ 
+m= sc.nextInt( ); 
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+min=Math.min(m,n); 
+        
+ 
+for(i=1;i<min;i++) 
+          
+{ 
+             
+ 
+ 
+if(m%i==0 && n%i==0) 
+                 
+ 
+ 
+hcf=i; 
+          
+} 
+       
+          
+if(hcf==1) 
+       
+ 
+{ 
+          
+ 
+System.out.println("CO-PRIME "); 
+       
+ 
+} 
+       
+ 
+else 
+       
+ 
+{ 
+          
+ 
+System.out.println("Not CO_PRIME"); 
+       
+ 
+} 
+     
+} 
+} 
+PROGRAMME    20: 
+/*to check and display whether two numbers are TWIN PRIME or not*/ 
+import   java.util.*; 
+class    class9 
+{ 
+     
+public   static   void   main(String   args[])throws            
+     
+{ 
+        
+ 
+ Scanner     sc   =new   Scanner(System.in); 
+        
+ 
+int   m,n,nfm=0,nfn=0,i; 
+        
+ 
+System.out.println("enter two number"); 
+        
+ 
+m= sc.nextInt( ); 
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+for(i=1;i<=m;i++) 
+
+=== PAGE 44 ===
+        
+ 
+{ 
+             
+ 
+ 
+if(m%i==0) 
+                 
+ 
+ 
+nfm++; 
+        
+ 
+} 
+          
+for(i=1;i<=n;i++) 
+          
+{ 
+             
+ 
+ 
+if(n%i==0) 
+                 
+ 
+ 
+nfn++; 
+          
+} 
+       
+ 
+if(nfm==2 && nfn==2 && Math.abs(m-n)==2) 
+       
+ 
+{ 
+          
+ 
+System.out.println("TWIN PRIME"); 
+       
+ 
+} 
+       
+ 
+else 
+       
+ 
+{ 
+          
+ 
+System.out.println("Not TWIN PRIME"); 
+       
+ 
+} 
+         
+     
+} 
+} 
+PROGRAMME    21: 
+/*to check and display whether a numbers is ARMSTRONG number or not*/ 
+import    java.util.*; 
+class   class9 
+{ 
+     
+public  static   void    main(String   args[])            
+     
+{ 
+        
+ 
+ Scanner     sc   =new    Scanner(System.in); 
+        
+ 
+int   n,i,d,s=0,dup; 
+        
+ 
+System.out.println("enter a numbers"); 
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+dup=n; 
+        
+ 
+while(n!=0) 
+          
+{ 
+             
+ 
+ 
+d=n%10; 
+             
+ 
+ 
+s=s+d*d*d; 
+             
+ 
+ 
+n=n/10; 
+          
+} 
+      
+ 
+if(s==dup) 
+       
+ 
+{ 
+          
+ 
+System.out.println("ARMSTRONG NUMBER "); 
+       
+ 
+} 
+       
+ 
+else 
+       
+ 
+{ 
+          
+ 
+System.out.println("Not ARMSTRONG NUMBER"); 
+       
+ 
+}     
+} 
+} 
+PROGRAMME    22: 
+/*to check and display whether a numbers is PALINDROME number or not*/ 
+import  java.util.*; 
+class  class9 
+{ 
+     
+public static void  main(String args[]) 
+    
+{ 
+        
+ 
+ Scanner      sc   =new   Scanner(System.in); 
+
+=== PAGE 45 ===
+        
+ 
+int  n,i,d,rev=0,dup; 
+        
+ 
+System.out.println("enter a numbers"); 
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+dup=n; 
+        
+ 
+while(n!=0) 
+          
+{ 
+             
+ 
+ 
+d=n%10; 
+             
+ 
+ 
+rev=rev*10+d; 
+             
+ 
+ 
+n=n/10; 
+          
+} 
+       
+ 
+if(rev==dup) 
+       
+ 
+{          
+ 
+ 
+System.out.println("PALINDROME NUMBER "); 
+       
+ 
+} 
+       
+ 
+else 
+       
+ 
+{ 
+ 
+ 
+ 
+System.out.println("Not A PALINDROME NUMBER"); 
+       
+ 
+}     
+ 
+} 
+ 
+} 
+ 
+PROGRAMME    23: 
+/*to check and display whether a numbers is NELSON number or not*/ 
+import    java.util.*; 
+class  class9 
+{ 
+    
+ public static void  main(String args[])     
+     
+{ 
+        
+ 
+ Scanner     sc   =new   Scanner(System.in); 
+        
+ 
+int  n,i,d,ld,dup; 
+ 
+ 
+System.out.println("enter a numbers"); 
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+dup=n; 
+        
+ 
+ld=n%10; 
+        
+ 
+n=Math.abs(n); 
+        
+ 
+if(n>=100) 
+        
+ 
+{ 
+             
+ 
+ 
+while(n!=0) 
+             
+ 
+ 
+{ 
+                 
+ 
+ 
+d=n%10; 
+                 
+ 
+ 
+if(d!=ld) 
+                      
+ 
+        break; 
+                 
+ 
+ 
+n=n/10; 
+             
+ 
+ 
+} 
+             
+ 
+ 
+if(n==0) 
+             
+ 
+ 
+{ 
+                 
+ 
+ 
+System.out.println("NELSON NUMBER "); 
+             
+ 
+ 
+} 
+             
+ 
+ 
+else 
+             
+ 
+ 
+{ 
+                 
+ 
+ 
+System.out.println("Not A NELSON NUMBER"); 
+             
+ 
+ 
+} 
+        
+ 
+} 
+        
+ 
+else 
+
+=== PAGE 46 ===
+        
+ 
+{ 
+             
+ 
+ 
+System.out.println("Not A VALID number"); 
+        
+ 
+} 
+     
+} 
+} 
+PROGRAMME    24: 
+/*to display FACTORIAL of a number*/ 
+import    java.util.*; 
+class   class9 
+{ 
+     
+public  static void main(String   args[ ]) 
+     
+{ 
+        
+ 
+ Scanner     sc =new    Scanner(System.in); 
+        
+ 
+int  n,i,f=1; 
+        
+ 
+System.out.println("enter a number"); 
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+for(i=1;i<=n;i++) 
+          
+{ 
+             
+ 
+ 
+f=f*i; 
+          
+} 
+       
+ 
+System.out.println("THE FACTORIAL OF THE NUMBER IS : "+f); 
+             
+} 
+} 
+ 
+PROGRAMME    25: 
+/*to display first 15 Fibonacci numbers */ 
+class   class9 
+{ 
+     
+public  static   void   main(String   args[]) 
+     
+{ 
+        
+ 
+int    a=0,b=1,c,i; 
+        
+ 
+System.out.println("First 15 Fibonacci numbers are :"); 
+ 
+    
+System.out.print(a+"  "+b+"  "); 
+        
+ 
+for(i=3;i<=15;i++) 
+          
+{ 
+             
+ 
+ 
+c=a+b;  
+ 
+ 
+ 
+ 
+System.out.print(c+"   "); 
+ 
+ 
+ 
+a=b; 
+ 
+ 
+ 
+b=c; 
+          
+} 
+     
+} 
+} 
+PROGRAMME    26: 
+/*to display  15th  Fibonaccii number */ 
+class   class9 
+{ 
+     
+public   static  void  main(String   args[]) 
+     
+{ 
+        
+ 
+int    a=0,b=1,c,i; 
+        
+ 
+for(i=3;i<=15;i++) 
+          
+{ 
+ 
+             
+ 
+ 
+c=a+b;  
+ 
+ 
+ 
+ 
+a=b; 
+ 
+ 
+ 
+b=c; 
+
+=== PAGE 47 ===
+          
+} 
+ 
+ 
+System.out.println("15th Fibonaccii number is  :  " +c); 
+     
+} 
+} 
+PROGRAMME    27: 
+/*to display 10th , 12th and 15th Fibonaccii numbers */ 
+class  class9 
+{ 
+     
+public  static   void   main(String   args[]) 
+     
+{ 
+        
+ 
+int    a=0,b=1,c,i; 
+        
+ 
+for(i=3;i<=15;i++) 
+          
+{ 
+             
+ 
+ 
+c=a+b;  
+ 
+ 
+ 
+if(i==10||i==12||i==15)  
+ 
+ 
+ 
+ 
+System.out.println(" The "+i+" th Fibonacci number is : "+ c); 
+ 
+ 
+ 
+a=b; 
+ 
+ 
+ 
+b=c; 
+          
+} 
+    
+ } 
+} 
+PROGRAMME    28: 
+/*to check and display whether a numbers is ODIUS OR EVIOUS number*/ 
+import    java.util.*; 
+class   class28 
+{ 
+     
+public  static   void    main(String   args[])           
+     
+{ 
+        
+ 
+ Scanner      sc   =new    Scanner(System.in); 
+        
+ 
+int   n,i,d,s=0; 
+        
+ 
+System.out.println("enter a numbers"); 
+        
+ 
+n= sc.nextInt( ); 
+       
+ 
+while(n!=0) 
+          
+{ 
+             
+ 
+ 
+d=n%2; 
+             
+ 
+ 
+if(d==1) 
+ 
+ 
+ 
+    s++; 
+             
+ 
+ 
+n=n/2; 
+          
+} 
+      
+ 
+if(s%2==1 
+       
+ 
+{ 
+          
+ 
+System.out.println("ODIOUS "); 
+       
+ 
+} 
+       
+ 
+else 
+       
+ 
+{ 
+          
+ 
+System.out.println("EVIOUS"); 
+       
+ 
+} 
+     
+} 
+} 
+ 
+PROGRAMME    29: 
+/*to display  sum of any one of the following series  1-2+3-4??up to n terms  or 1!-2!+3!-4!??up 
+to n tetms*/ 
+import    java.util.*; 
+
+=== PAGE 48 ===
+class   class28 
+{ 
+     
+public  static   void    main(String   args[]) 
+     
+{ 
+        
+ 
+ Scanner        sc   =new    Scanner(System.in); 
+        
+ 
+int   n,i,d,s=0,v=1; 
+        
+ 
+System.out.println("enter the range"); 
+        
+ 
+n= sc.nextInt( ); 
+        
+ 
+System.out.pritnln(?Press 1 to run first series or press 2 for second series?); 
+ 
+ 
+System.out.pritnln(?Enter your choice?); 
+d= sc.nextInt( ); 
+ 
+ 
+switch(d) 
+ 
+ 
+{ 
+ 
+ 
+ 
+case  1: 
+        
+ 
+ 
+ 
+for(i=1;i<=n;i++) 
+ 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+ 
+ 
+if(i%2==0) 
+ 
+ 
+ 
+ 
+ 
+ 
+s=s-i; 
+ 
+ 
+ 
+ 
+ 
+else 
+ 
+ 
+ 
+ 
+ 
+ 
+s=s+i; 
+ 
+ 
+ 
+ 
+} 
+ 
+ 
+ 
+ 
+System.out.println(?The sum of the series is :?+s); 
+ 
+ 
+ 
+ 
+break; 
+ 
+ 
+ 
+case  2: 
+     
+ 
+ 
+ 
+for(i=1;i<=n;i++) 
+ 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+ 
+ 
+v=v*i; 
+ 
+ 
+ 
+ 
+ 
+if(i%2==0) 
+ 
+ 
+ 
+ 
+ 
+ 
+s=s-v; 
+ 
+ 
+ 
+ 
+ 
+else 
+ 
+ 
+ 
+ 
+ 
+ 
+s=s+v; 
+ 
+ 
+ 
+ 
+} 
+System.out.println(?The sum of the series is :?+s); 
+ 
+ 
+ 
+ 
+break; 
+ 
+ 
+ 
+default: 
+ 
+ 
+ 
+ 
+System.out.println(?WRONG  CHOICE?); 
+ 
+ 
+} 
+} 
+} 
+ 
+1. Write a program to input an integer and find its factorial. Factorial of a number is the 
+product of all natural numbers till that number. For example factorial of 5 is 120 since 
+1?2?3?4?5=120. 
+Ans. 
+Ans.
+       import java.util.*;  
+class Q1 
+{ 
+static void main() 
+{ 
+Scanner sc=new Scanner(System.in); 
+ int i,f=1,n; 
+System.out.println(?Enter a number:?);  
+
+=== PAGE 49 ===
+n=sc.nextInt(); 
+for(i=1;i<=n;i++) 
+{ 
+f=f*i; 
+} 
+System.out.println(?Factorial=?+f); 
+} 
+} 
+2. Write a program to input an integer and print its factors. 
+ For Example,  INPUT: Enter an integer:12 
+OUTPUT: Factors: 1 2 3 4 6 12 
+Ans. 
+import java.util.*;  
+class Q2 
+{ 
+static void main() 
+{ 
+Scanner sc=new Scanner(System.in);  
+int i,n; 
+System.out.println(?Enter an integer:?);  
+n=sc.nextInt(); 
+ System.out.println(?Factors:?); 
+ for(i=1;i<=n;i++) 
+  { 
+if (n%i==0) 
+ System.out.print(i+? ?); 
+      } 
+ 
+} 
+} 
+ 
+ 
+
+=== PAGE 50 ===
+ 
+ 
+3. To input an integer and count the number of factors. 
+ Ans. 
+import java.util.*; 
+ class Q3 
+{ 
+static void main() 
+{ 
+Scanner sc=new Scanner(System.in); 
+ int i,n,c=0; 
+System.out.println(?Enter an integer:?);  
+n=sc.nextInt(); 
+for(i=1;i<=n;i++) 
+{ 
+if (n%i==0) c++; 
+} 
+System.out.println(?No. of Factors:?+c); 
+} 
+} 
+4. Write a program to input an integer and check whether it is a prime number or not. 
+ Ans. 
+import java.util.*; 
+ class Q4 
+{ 
+static void main() 
+{ 
+Scanner sc=new Scanner(System.in) ;  int i,n,c=0; 
+System.out.println(?Enter an integer:?) ;  
+n=sc.nextInt(); 
+for(i=1;i<=n;i++) 
+{ 
+if (n%i==0)  
+c++; 
+} 
+if(c==2) 
+System.out.println(?Prime number?);  
+else 
+System.out.println(?Not a Prime number?); 
+} 
+} 
+5. Write a program to input 10 integers and find their sum.  
+Ans. 
+
+=== PAGE 51 ===
+ 
+ 
+import java.util.*; 
+ class Q5 
+{ 
+static void main() 
+{ 
+Scanner sc=new Scanner(System.in); int i,n,s=0; 
+System.out.println(?Enter 10 integers:?); for(i=1;i<=10;i++) 
+{ 
+n=sc.nextInt(); s=s+n; 
+} 
+System.out.println(?Sum of the numbers=?+s); 
+} 
+} 
+1. Write a program to input 10 integers and find the sum of the prime 
+numbers  only.  
+Ans. 
+import java.util.*;  
+class Q1 
+{ 
+static void main() 
+{ 
+int i,j,n,s=0,c; 
+Scanner sc=new Scanner(System.in); 
+System.out.println(?Enter 10  integers:?); for(i=1;i<=10;i++) 
+{ 
+n=sc.nextInt();  
+c=0; 
+for(j=1;j<=n;j++) 
+{ 
+if(n%j==0) c++; 
+} 
+if(c==2) 
+ s=s+n; 
+} 
+System.out.println(?Sum of prime numbers=?+s); 
+} 
+} 
+ 
+ 
+2. Write a program to generate all perfect numbers between 1 to 100. Ans. 
+class Q2 
+{ 
+
+=== PAGE 52 ===
+ 
+ 
+static void main() 
+{ 
+int i,j,c; 
+ for(i=1;i<=100;i++) 
+{ 
+c=0; 
+for(j=1;j<i;j++) 
+{ 
+if(i%j==0) 
+ c+=j; 
+} 
+if(c==i) 
+ System.out.println(i); 
+} 
+} 
+} 
+3. Write a program to generate all 3 digit palindrome numbers. 
+ Ans. 
+class Q3 
+{ 
+static void main() 
+{ 
+int i,j,r,d; 
+ for(i=100;i<=999;i++) 
+{ 
+r=0; 
+for(j=i;j>0;j=j/10) 
+{ 
+d=j%10; 
+r=r*10+d; 
+} 
+if(r==i) 
+ System.out.println(i); 
+} 
+} 
+} 
+4. Input an integer and check whether it is a special number or not. A special 
+number is such    a number whose sum of the factorials of each digit is the number 
+itself. For example, 145 is a special number because 1! + 4! + 5! = 1 + 24 +120 = 
+145. Special numbers are also called factorions. 
+Ans. 
+class Q4 
+ 
+
+=== PAGE 53 ===
+ 
+ 
+{ 
+ public static void main() 
+{ 
+int i,j,r,d; for(i=100;i<=999;i++) 
+{ 
+r=0; 
+for(j=i;j>0;j=j/10) 
+{ 
+d=j%10; 
+r=r*10+d; 
+} 
+if(r==i) System.out.println(i); 
+} 
+} 
+ 
+5. Write a program to input a number and check whether it is a magic number or 
+not. If you iterate the process of summing the squares of the decimal digits of the 
+number, and if this process terminates in 1, then the original number is called a 
+magic number. For example 55
+ (5+5)=10
+ (1 +0)=1. 
+Ans. 
+import java.util.*; 
+ class Q5 
+{ 
+static void main() 
+{ 
+Scanner sc=new Scanner(System.in); 
+ int n,i,s,d; 
+System.out.println(?Enter a number:?); 
+ n=sc.nextInt(); 
+for(s=0;n>9;n=s,s=0) 
+{ 
+ 
+for(i=n;i>0;i=i/10) 
+{ 
+d=i%10; 
+s+=d; 
+} 
+} 
+if(n==1) 
+System.out.println(?Magic Number?); 
+ else 
+System.out.println(?Not a magic number?); 
+} 
+} 
+
+=== PAGE 54 ===
+ 
+ 
+ 
+6. Write programs in Java to display the sum of the given series: 
++ ????.. 
+ 
+Ans. 
+import java.util.*;  
+class Q6 
+{ 
+static void main() 
+{ 
+int i,j,x,n,f; 
+ double s=0; 
+Scanner sc=new Scanner(System.in); 
+ System.out.println(?Enter the value of x:?); 
+ x=sc.nextInt(); 
+System.out.println(?Enter the value of n:?); 
+ n=sc.nextInt(); 
+for(i=1;i<=n;i++) 
+{ 
+f=1; 
+for(j=1;j<=i;j++) 
+ f*=j; 
+if(i%2==1) s=s+Math.pow(x,i+1)/f; 
+ else 
+s=s-Math.pow(x,i+1)/f; 
+} 
+System.out.println(?Sum=?+s); 
+} 
+} 
+ 
+ 
+7. Write programs to display the following patterns: 
+              1 
+            21 
+          321 
+        4321 
+      54321 
+Pattern (a)  
+ 
+12345 
+12341 
+12322 
+12333 
+14444 
+Pattern (b)
+
+=== PAGE 55 ===
+ 
+ 
+class Q7a 
+{ 
+static void main() 
+{ 
+int i,j; 
+ for(i=1;i<=5;i++) 
+{ 
+for(j=1;j<=5;j++) 
+{ 
+if(i+j>=6) 
+ System.out.print(6-j); 
+ else 
+ System.out.print(? ?); 
+} 
+System.out.println(); 
+} 
+} 
+} 
+ 
+ 
+ 
+class Q7b 
+{ 
+static void main() 
+{ 
+int i,j; for(i=1;i<=5;i++) 
+{ 
+for(j=1;j<=6-i;j++) 
+ System.out.print(j); 
+ for(j=1;j<=i-1;j++) 
+ System.out.print(j); 
+ System.out.println(); 
+} 
+} 
+} 
+8. Write a menu driven program to accept a number and check and display whether it is a 
+Prime Number or not OR an Automorphic Number or not. 
+a. 
+Prime number : A number is said to be a prime number if it is divisible only by 1 and 
+itself and not by any other number. 
+Example : 3,5,7,11,13 etc. 
+b. 
+Automorphic number : An automorphic number is the number which is contained in 
+the last digit(s) of its square. 
+Example: 25 is an automorphic number as its square is 625 and 25 is present as the last 
+two digits. 
+
+=== PAGE 56 ===
+ 
+ 
+Ans. 
+import java.util.*;  
+class Q8 
+{ 
+static void main() 
+{ 
+Scanner sc=new Scanner(System.in);   
+int ch,i,c=0,n; 
+ System.out.println(?Enter a number:?); 
+ n=sc.nextInt(); 
+ System.out.println(?MENU?); 
+ System.out.println(?1.Prime Number?); 
+System.out.println(?2.Automorphic Number?); 
+ System.out.println(?Enter your choice:?); 
+ ch=sc.nextInt(); 
+switch(ch) 
+{ 
+case 1: for(i=1;i<=n;i++) 
+{ 
+if(n%i==0) 
+ c++; 
+} 
+if(c==2) 
+System.out.println(?Prime Number?); 
+ else 
+System.out.println(?Not a Prime Number?);  
+break; 
+ 
+case 2: 
+for(i=n;i>0;i=i/10) 
+{ 
+c++; 
+} 
+if((n*n)%(int)Math.pow(10,c)==n) 
+ System.out.println(?Automorphic Number?); 
+ else 
+System.out.println(?Not an Automorphic Number?);  
+break; 
+
+=== PAGE 57 ===
+ 
+ 
+ 
+default: 
+System.out.println(?Invalid choice?); 
+} 
+} 
+} 
+ 
+PROGRAMME    30: 
+/*to display  any one of the following structures 
+1 
+ 
+ 
+ 
+ 
+ 
+* 
+12 
+ 
+ 
+ 
+ 
+             ** 
+123 
+ 
+ 
+or 
+ 
+           *** 
+1234  
+ 
+ 
+ 
+         **** 
+12345  
+ 
+ 
+ 
+       ***** 
+*/ 
+import    java.util.*; 
+class   class28 
+{ 
+     
+public  static   void    main(String   args[])throws            
+     
+{ 
+        
+ 
+ Scanner     sc   =new    Scanner(System.in); 
+        
+ 
+int   r,d,b,k; 
+        
+ 
+System.out.pritnln(?Press 1 to show first structure or press 2 for second structure?); 
+ 
+ 
+System.out.pritnln(?Enter your choice?); 
+d= sc.nextInt( ); 
+ 
+ 
+switch(d) 
+ 
+ 
+{ 
+ 
+ 
+ 
+case  1: 
+        
+ 
+ 
+ 
+for(r=1;r<5;r++) 
+ 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+ 
+ 
+for(k=1;k<=r;k++) 
+ 
+ 
+ 
+ 
+ 
+ 
+System.out.print(k); 
+ 
+ 
+ 
+ 
+ 
+System.out.println(); 
+ 
+ 
+ 
+ 
+ 
+ 
+} 
+ 
+ 
+ 
+ 
+break; 
+ 
+ 
+ 
+case  2: 
+     
+ 
+ 
+ 
+for(r=1,b=4;r<5;r++,b--) 
+ 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+ 
+ 
+for(k=1;k<=r;k++) 
+ 
+ 
+ 
+ 
+ 
+ 
+System.out.print(?  ?); 
+for(k=1;k<=r;k++) 
+ 
+ 
+ 
+ 
+ 
+ 
+System.out.print(?*?); 
+ 
+ 
+ 
+ 
+ 
+System.out.println(); 
+ 
+ 
+ 
+ 
+} 
+ 
+ 
+ 
+ 
+break; 
+ 
+ 
+ 
+default: 
+ 
+ 
+ 
+ 
+System.out.println(?WRONG  CHOICE?); 
+ 
+ 
+ 
+} 
+ 
+} 
+} 
+ 
+
+=== PAGE 58 ===
+ 
+ 
+Write programs for the following: 
+1. 
+Write a program to input the area of a square and find its perimeter. 
+ 
+2. Write a program that outputs the results of the following evaluations based on the number entered 
+by the user. 
+i. Cube root of the number 
+ii. Absolute value of the number 
+iii. Square root of the number 
+iv. Random numbers between 0 and 1. 
+ 
+3. 
+Write a program to input three integers and find the sum of their cube roots 
+4. 
+Write a program to input the principal, rate and time and find the compound interest. 
+Compound Interest = Principal (1 +
+ 2 
+5.Write a program to input a real number(floating point number) and round it off to 2 places of decimal. 
+For example, 
+Input: 4.3678 
+Output: 4.37 
+Input: 24.3123 
+Output: 24.31 
+
+=== PAGE 59 ===
+ 
+ 
+ 
+Related Questions and Programs: 
+Programs: 
+Write Java Programs for the following: 
+a. To swap two numbers using a temporary variable. 
+b. Input the values of x and y. find y as a percent of x. 
+c. To display the message this is my first Java program. 
+d. To input the length and sc   eadth and find the perimeter, area and lent of its diagonal. 
+e. The wages of a man earning Rs.x per hour is given for t hours in given by the formula W=xt. 
+Find his wages for working 45 hours at the rate of Rs. 125.25 per hour. 
+f. 
+The corresponding temperature in the Fahrenheit scale using the formula, if C=40  
+g. To swap two numbers without using a temporary variable. 
+h. Find the area of a triangle with sides 21cm, 17cm and 10 cm using Herons formula, given 
+as
+  where 
+ .  
+i. Find the surface area of 4 walls and the diagonal of a cuboid using the formulae 
+ and diagonal=
+ 
+ 
+          j. Find the volume and total surface area of a cylinder using: 
+ 
+Programs: 
+1. Wap a program that displays an amount in rupees in terms of notes of different Indian 
+denominations. E.g. if the amount is Rs. 3456, the output 
+2000-notes 
+:1 
+500- notes 
+:2 
+100-notes 
+:4 
+50-notes 
+:1 
+20-notes 
+:0 
+10-notes 
+:0 
+5-notes 
+:1 
+1-notes  
+:1 
+2. Wap to input a real number and display its integer and real part in separate lines. 
+e.g  
+Input   
+   :25.768 
+ 
+Output  
+ 
+ 
+integer  
+   :   25 
+ 
+fractional part : .768 
+3. A Computer manufacturing Company announces a special offer to their customer on purchasing 
+Laptops and the Printers accordingly: 
+  
+  
+On Laptop:   Discount - 15% 
+
+=== PAGE 60 ===
+ 
+ 
+ 
+ 
+On Printers:  Discount - 10% 
+ 
+Write a program to accept the purchase price of Laptop and Printer, calculate the discount and display 
+the net amount the customer will pay on his purchase. 
+ 
+4. In an election, two candidates A and B contested.  A got 60% of the votes.  Write a program to 
+accept the total number of votes and calculate the number of votes each candidate got and display 
+the result. 
+5. Write a program to accept the basic pay of an employee,  Compute and display the net pay of the 
+employee based on following allowances and deductions: 
+  
+ 
+Dearness Allowance  
+25% of Basic Pay 
+  
+ 
+House Rent Allowance 
+15% of Basic Pay 
+  
+ 
+Provident Fund 
+ 
+10% of Basic Pay 
+  
+ 
+Gross Pay = Basic Pay + Dearness Allowance + House Rent Allowance 
+  
+ 
+Net Pay = Gross Pay ? Provident Fund 
+ 
+6. If a = 5 , b= 9 , calculate the value of: 
+a += a++ - ++b +a 
+ 
+7. Write Java expressions: 
+ 
+ii.
+ 
+8. Write in algesc   aic form:  
+ 
+9. State the value of n and ch when 
+char ch=?A?; 
+int n= ch+1; 
+char ch=(char)n; 
+10. Evaluate:  
+ 
+ 
+1. 
+ Using conditional operator write equivalent expressions for the following: 
+i. 
+F=0.5 if x=30 otherwise 0. 
+ Ans. F=(x==30)?0.5:0; 
+ii. Print ?Even? if x is an even number otherwise print ?Odd?. 
+ Ans. System.out.println((x%2==0)? ?Even?: ?Odd?; 
+2.Rewrite the following using Ternary operator  
+if (income < = 10000 ) 
+tax = 0; 
+ else 
+tax = 12; 
+
+=== PAGE 61 ===
+ 
+ 
+Ans. tax=(income<=10000)?0:12; 
+3.Find the output of the following program segment, when: 
+i. val = 500 
+ii. val = 1600 
+int val, sum, n 550; 
+sum = n + val > 750? 400 : 200; System.out.println(sum); 
+Ans. i. 200 
+        ii. 400 
+ 
+4. Give the output of the following switch statement:  
+switch(num) 
+{ 
+case 10: 
+case 100: 
+System.out.println(?Ten and hundred?); break; 
+case 1000: 
+case 400: 
+System.out.println(?Thousand and 4 hundred?); break; 
+default: 
+System.out.println(?Invalid Input?); 
+ 
+i.  num=100 
+ii. num=1400 
+iii.  num=1000 
+iv. num=400 
+ans.  
+i. 
+Ten and hundred 
+ii. 
+Invalid Input 
+iii. 
+Thousand and 4 hundred 
+iv. 
+Thousand and 4 hundred 
+ 
+5.Write a program to input the Selling Price and Cost Price of a commodity and find the Profit or Loss 
+made upon selling the product. 
+For example, 
+INPUT: 
+
+=== PAGE 62 ===
+ 
+ 
+Enter the Selling Price of the commodity: 456 
+ Enter the Cost Price of the commodity: 400 
+OUTPUT: 
+Profit: 56 
+INPUT: 
+Enter the Selling Price of the commodity: 300  
+Enter the Cost Price of the commodity: 310 
+OUTPUT: 
+Loss: 10 
+6. Write  a program to input an integer and check whether it is a 2-digit or a  3-digit number   or not. In 
+case it is not a 2-digit or a 3-digit number a relevant message (?Not 2 or 3 digit number?) should be 
+displayed. 
+Write a program to input 2 integers and check whether both the numbers are multiples of 7 or not. 
+ 
+7. Write a program to accept three sides of a triangle as parameter and check whether it can form a 
+triangle or not. If it forms a triangle, check whether it is an acute angled, obtuse angled or right-angled 
+triangle. 
+(Hint: To form a triangle, each side should be less the sum of the other two sides.. 
+To form an acute angled triangle the square of every side should be less than the sum of the squares of 
+the other two sides. 
+To form an obtuse angled triangle the square of any side should be greater than the sum of the squares 
+of the other two sides. 
+To form a right angled triangle the square of any side should be equal to the sum of the squares of the 
+other two sides.) 
+8. A cloth showroom has announced the following festival discounts on the purchase of items, based on 
+the total cost of the items purchased: 
+ 
+Total Cost 
+Discount (in Percentage) 
+Less than 2000 
+5% 
+>= 2000 to  <5000 
+25% 
+>= 5000 to <10000 
+35% 
+Above 10000 
+50% 
+Write a program to input the total cost and compute and display the amount to be paid by the customer 
+after availing the discount. 
+9. Write a program to calculate the Telephone bill according to the following rules: 
+  
+ 
+i. Minimum of Rs.250.00 is charged as rent. 
+  
+ 
+ii. First 80 calls FREE 
+  
+ 
+iii. Next 60 call @ Rs.0.60 
+  
+ 
+iv. Next 60 call @ Rs.0.50 
+  
+ 
+v. Above 200 call @ Rs.0.40 
+
+=== PAGE 63 ===
+ 
+ 
+10. Write a program to calculate electricity bill for the number of units consumed given as input, 
+following the rules given below: 
+ 
+Minimum  Meter rent charges  
+Rs.100.00 
+  
+ 
+Up to 250 units 
+ 
+ 
+Rs.0.80 per unit 
+  
+ 
+Above 250 units 
+ 
+ 
+Rs.1.50 per unit 
+ 
+6. Write java programs for the following: 
+a. To print the following series:    1    -4    7   -10 ??.. -40. 
+b. To print the LCM and GCD of two numbers 
+c. To find the sum of the series 
++
+ 
+d. To swap the first and last digit of a three digit number 
+e. To print place value of ten?s and thousand?s digit in a number. 
+e.g. number 72149 
+ output= 2000 and 40 
+ 
+ 
+ 
+ 
+CLASS: IX/SET-1 
+COMPUTER APPLICATION 
+Time: 1/2 HRS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Marks: 40 
+Attempt all questions 
+QUESTION  1: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(a) 
+What is JIT? How it helps? 
+(b) 
+Write few lines about GIGO. 
+(c) 
+Write the symbol used for remark statements. 
+(d) 
+What is OOPS? Write its principles. 
+(e) 
+Write the use of Blue J. 
+QUESTION  2: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(a) 
+Differentiate between Integer   and   int. 
+(b) 
+What is the use of Loop? Write the syntax of for loop. 
+(c) 
+What is the use of break statement in switch case. Explain with example 
+(d) 
+What is operator? Write the example of unary operator. 
+(e) 
+Write the suitable data type to store ?\b?. How much bits it will occupy. 
+QUESTION  3: 
+Do as directed : 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 10=20] 
+(a) Give  one word answer for the following : 
+  
+ 
+ 
+ 
+   
+i) It is a keyword which is used to proceed for the next iteration in a loop.. 
+ii) It is a class which carries print ( ) method. 
+(b) Express the following in mathematical format also mention the data type of the resultant 
+variable. 
+i) a=Math.abs(Math.sin(a)+(a+b)); 
+
+=== PAGE 64 ===
+ 
+ 
+ii) a=p+2*q/r*s; 
+(c) Write the range of the following data type : i)  
+byte 
+ 
+ii) 
+char 
+(d) 
+Find the error :    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+int  p=10,q==5; 
+while(p>q) 
+System.Out.println(p+q), system.out.printLn(?p=?+q); 
+(e)      Predict the output : 
+int k; 
+switch(k) 
+{ 
+ 
+case 1: 
+ 
+case  11: 
+System.out.printlln(?A?); 
+ 
+ 
+ 
+break; 
+ 
+case 2: 
+Ststem.out.printlln(?B?); 
+ 
+case  3: 
+ 
+case  33: 
+System.out.printlln(?C?); 
+ 
+default: 
+Ststem.out.printlln(?D?); 
+} 
+Write output in a box for the following input : k=1,  k=2 , k=33 & k=10 
+(f) Convert the following into if --- else. 
+d=a+b>5?a+b:a!=5?5:6; 
+(g) Write the corresponding java expression for the following 
+i) m+5n5+mn3 
+ 
+ii) (3a+4b+5/c)2/3 
+(h) Answer the below questions by choosing any one of the four given options: 
+i. Which of the following is not a keyword? 
+(i) case                     (ii) void                  (iii) while                           (iv) main 
+ii. Which of the following removes the fall through problem. 
+(i) continue                (ii) switch                (iii) break                          (iv) default 
+(i) Find the value in the following cases: 
+i) Math.rint(11.11) 
+ii) Math.abs(Math.sqrt(16)); 
+(j) Write  java statements for the following. 
+i) Create an appropriate variable p in order to store the age of a person. 
+ii) To store  the value of (p+q)4  in m which is double type. 
+ 
+CLASS: IX/SET-2 
+COMPUTER APPLICATION 
+Time: 1/2 HRS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Marks: 40 
+Attempt all questions 
+QUESTION  1: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(a) 
+Differentiate between data type and variable. 
+(b) 
+What is encapsulation? How it is implemented in class? 
+(c) 
+What is escape sequence? Write two examples. 
+(d) 
+What is the use of default in switch case? In its absence what will happen? 
+(e) 
+What is token?  Write the type of token a case statement uses. 
+QUESTION  2: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(f) 
+What is the use of String args[ ]?  
+(a) 
+What is the use of abs( ) method. Explain with example 
+(b) 
+What is String? Write syntax to store bbsr in a string variable s. 
+
+=== PAGE 65 ===
+ 
+ 
+(c) 
+Differentiate between syntax error  and  logical error. 
+(d) 
+What is the use of import keyword? Write the package which is activated automatically? 
+QUESTION  3: 
+Do as directed : 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 10=20] 
+(a) Give  one word answer for the following : 
+  
+ 
+ 
+ 
+   
+i. It is a method which is used to get the rounded value in double form. 
+ii. It is a package which carries BufferedReader class. 
+(b) Express the following in mathematical format also mention the data type of the resultant 
+variable. 
+i. a=Math.pow(Math.sin(a)+(a+b),3); 
+ii. a=2*p+(2*q/r)-s; 
+(c) Write the default value of the following data type : i)  
+boolean 
+ii) 
+float 
+(d) 
+Find the output :    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+int  m=15,n=5; 
+while(m-->++n) 
+System.out.println(m+n),  
+System.out.println(?m=?+n); 
+(e) Convert to if else : 
+int k; 
+switch(k) 
+{ 
+ 
+case 1: 
+ 
+case  11: 
+System.out.println(?a?); 
+ 
+ 
+ 
+break; 
+ 
+case 2: 
+Ststem.out.println(?b?); 
+ 
+case  3: 
+ 
+case  33: 
+System.out.println(?c?); 
+ 
+default: 
+Ststem.out.println(?D?); 
+} 
+(f) Find the output of the following . 
+d=a+b>5?a+b:a!=5?5:6;  
+where  i) a=2, b=4 
+ii) a=2 , b=2 
+(g) Write the corresponding java expression for the following 
+a. (m/5n5 )+mn3/5  
+b. (3ab+5c4)2 
+(h) Answer the below questions by choosing any one of the four given options: 
+ii. Which of the following is not an identifier? 
+(i)new                      (ii) Void                  (iii) println                           (iv) 
+BufferedReader 
+iii. Which of the following is not a constant. 
+(i)   123f             (ii) ?a12?                (iii) abc                          (iv) ?\\? 
+(i) Find the value in the following cases: 
+a. Math.floor(Math.round(11.11)+.5) 
+b. Math.max(Math.sqrt(16),Math.min(3,-3)); 
+(j) Write  java statements for the following. 
+a. Create an appropriate variable m in order to store the compound interest. 
+b. To store  the value of Math.round(2.33)+Math.sqrt(64)  in m which is double type. 
+CLASS: IX/SET- 3 
+COMPUTER APPLICATION 
+Time: 1/2 HRS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Marks: 40 
+Attempt all questions 
+QUESTION  1: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(f) 
+What is byte code? How is it created? 
+
+=== PAGE 66 ===
+ 
+ 
+(a) 
+Write two application areas of Java. 
+(b) 
+?Java is robust?- Explain the statement. 
+(c) 
+Write four important features of java. 
+(d) 
+Differentiate class and object. 
+QUESTION  2: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(a) 
+What is the use of do  while loop. Give its syntax. 
+(b) 
+What is a control statement? Give some examples. 
+(c) 
+What operator precedence?  
+(d) 
+What is constant? Write an example of single precision constant?   
+(e) 
+What is non graphic character? How much bits \n will carry. 
+QUESTION  3: 
+Do as directed : 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 10=20] 
+(a) Convert the following into switch case. 
+if(ch==?a? || ch==?A?) 
+ 
+System.out.printlln(?A?); 
+else if(ch==?B?) 
+ 
+System.out.printlln(?B?); 
+else if(ch==?c?) 
+ 
+System.out.printlln(?C?); 
+(b) 
+Predict the output:     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+int  x,y; 
+for (x=1;x++<5;x++); 
+System.out.println(?x=?+x++); 
+System.out.println(y=++x); 
+(c) 
+int m=1; 
+do 
+ 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+     
+ 
+ System.out.println(?PPT?+m+1); m+=2; 
+ 
+}while(m++ +2<10); 
+ 
+ 
+System.out.println(?PPT?+(m+1)); 
+i) How many times PPT will appear on the screen? 
+ii) What will be the output? 
+(d) Differentiate : 
+m+1 
+and  
+m++ 
+(e) Rewrite the following : 
+i. a=a+5;(using  += operator) 
+ii. a+=1;(using ++postfix notation) 
+(f) write name of all the tokens used in the following statement and also count number of tokens in 
+the instruction : 
+int  m=(int)Math.pow(10,2); 
+(g) find the values in the following cases: 
+a. Math.abs(Math.sqrt(25)*-0.5); 
+b. Math.round(Math.pow(10,2)+0.75) 
+c. Math.ceil(Math.round(14.99)); 
+d.  (char)Math.rint(64.99); 
+(h) Write  java statements for the following. 
+a. To display highest out of three numbers present in a,b,c. 
+b. To store the integer part of a decimal number  present in m; 
+(i) Write the corresponding java expression for the following 
+a. (ax5+by3)1/2 
+ 
+b. (a+5b/c)5 
+ 
+ 
+CLASS: IX/SET - 4 
+
+=== PAGE 67 ===
+ 
+ 
+COMPUTER APPLICATION 
+Time: 1/2 HRS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Marks: 40 
+Attempt all questions 
+QUESTION  1: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(a) 
+What debugging? 
+(b) 
+How java compilation is different from ordinary compilation. 
+(c) 
+Differentiate between operator and operand. 
+(d) 
+What is class? Write its elements. 
+(e) 
+Why java is called as WORA language. 
+QUESTION  2: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 5 = 10] 
+(a) 
+Explain the scope of a variable. 
+(b) 
+What is if  else ladder ? Give an example. 
+(c) 
+Why parseInt( ) method is essential? In which class is it present?  
+(d) 
+Write two lines about boolean data type. 
+(e) 
+What is mixed expression? Give one example. 
+QUESTION  3: 
+Do as directed : 
+ 
+ 
+ 
+ 
+ 
+ 
+[2 x 10=20] 
+(a) Write one word answer for the following : 
+  
+ 
+ 
+ 
+   
+i. It is a package which carries the String class. 
+ii. It is a data type which ranges within 0 to 65,535 
+(b) Write the difference between   ab   and a*b 
+(c) Rectify the error if any, in the following instructions with appropriate reason: 
+ 
+ 
+char  e;   float  d;    
+ 
+ 
+ 
+ 
+d=3.55; 
+ 
+ 
+ 
+ 
+ 
+e=?9?;  
+(d) Predict the output.    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+int  a,b; 
+for (a=1;a<10;a+=3) 
+for(b=1;b<a;b++); 
+System.out.println(a+b); 
+System.out.println(?b=?+a); 
+(e) Write the type of variable needed to store following type of constants: 
+i. 234L 
+ii. true 
+iii. ?false? 
+iv. 2+?2? 
+(f) Predict the output : 2+4*1/2%5-33+1/2/3*4 
+(g) Answer the below questions by choosing any one of the four given options: 
+i. Which of the following is not a separator? 
+(i) ;                     (ii)  %                  (iii) :                           (iv) ?? 
+ii. Which of the following is a referential datatype. 
+(i)   Float            (ii) long            (iii) double                         (iv) char 
+(h) Find the value in the following cases: 
+a. Math.ceil(Math.floor(11.11)+.5) 
+b. Math.min(Math.sqrt(16),Math.min(-33,-3)); 
+(i) Write  java statements for the following. 
+a. Create an appropriate variable m in order to store the value of readLine(). 
+b. To store  the value of (int)Math.sqrt(2.33)+Math.round(64)  in m which is double type. 
+ 
+ 
+ 
+
+=== PAGE 68 ===
+ 
+ 
+ 
+Do as directed: 
+1. State the java concept that is implemented through: 
+a. A super class and a subclass. 
+b. The act of representing essential features of a class without including the background details. 
+Ans:  a. Inheritance 
+ 
+b. Data abstraction 
+2. Mention two limitations of procedure oriented language ? 
+Ans: i) The inability to reuse code throughout the program 
+         ii)Causes problem for the programmer while debugging. 
+3. Mention two benefits of object oriented language ? 
+Ans: i) Data values are secured. 
+         ii) Mishandling of data is protected. 
+4. In object oriented programming, stress is given on: 
+a. Procedure 
+b. Method 
+c. Class   
+d. Data 
+Ans: d. Data 
+5. Which of the following principle does not allow to access directly from outside the class premises : 
+a. Data hiding 
+b. Encapsulation 
+c. Abstraction  
+d. All of the above 
+Ans: a. Data hiding 
+6. In procedural programming, the stress is laid on : 
+a. Class   b.  function 
+c.  data  
+d. object 
+Ans: b. function 
+7. A _________ is a set of objects that has common attributes and common behaviours. 
+a. Abstractions 
+b. encapsulation 
+c. class  
+d. function 
+Ans:  c. class 
+8. What are the type of conversion shown in the following examples: 
+double  x=15.2; 
+int  a=12; 
+i. 
+int  y=(int)x; 
+ 
+iii. char  c=(char)120; 
+ 
+ii. 
+long  b=a; 
+ 
+iv. int  x= ?x?; 
+Ans: 
+i. Explicit conversion 
+ii. Implicit conversion 
+iii. Explicit conversion 
+iv. Implicit conversion 
+ 
+9. Give the reason whether the following assignments are correct or not. 
+i. 
+int   m=155; 
+ 
+ 
+e. String  b= ?true?; 
+ii. 
+float   f=0.002654132; 
+ 
+f. char   ch= ?apps?;   
+
+=== PAGE 69 ===
+ 
+ 
+iii. 
+String   str= ?computer?; 
+ 
+g.  String   st= ?Application?; 
+iv. 
+boolean   p=false;  
+ 
+h.  double   n=455.29044125;   
+10. Distinguish between  
+(p!=q)  
+and  
+ 
+!(p==q) 
+11. What is null loop? Write one example. 
+ 
+12. Predict the output: 
+i. 
+If y=14, then find  z=(++y*(y++  +5)) 
+ii. 
+If a=8, find the value of a-=++a + a++ +4 
+iii. 
+If a=12,b=8 ,find the value of a*=++a/6 + b++ %3 
+iv. 
+If x=4, find the value of x+=x++ *++x%2 
+v. 
+If a=48,b=13 , then find the value of a+=b++*5/a++ +b 
+vi. 
+int  k=5,j=9; k+=k++ - ++j+k; find the value of k and j. 
+vii. 
+if int  y=10; then find the value of y and z, where z=(++y*(y++ +5)); 
+viii. 
+a=7; find the value of a when a+=a++ + ++a+--a+a--; 
+ix. 
+y=8;find the value of y when y+=++y+y-- +--y ; 
+x. 
+ a=5;  a++; 
+a-=(a--)-(--a); find the value of a. 
+xi. 
+int  c=(3<4)?3*4:3+4; find the value of c. 
+xii. 
+int  x=90; 
+char  c=(x<=90)? ?Z?: ?I?; 
+Find the value of c. 
+xiii. 
+int  a=18,b=12; 
+boolean  t=(a>20 && b<15)? true:false; 
+Find the value of t. 
+xiv. 
+c=(val+550<1700)?200:400; 
+find the value of c for 
+ a)val=1000 
+and 
+b)val=1500 
+13. Rewrite the following programme segment using   
+ 

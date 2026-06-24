@@ -1,0 +1,415 @@
+--- PAGE 61 ---
+  
+ 
+Ans. tax=(income<=10000)?0:12; 
+3.Find the output of the following program segment, when: 
+i. val = 500 
+ii. val = 1600 
+int val, sum, n 550; 
+sum = n + val > 750? 400 : 200; System.out.println(sum); 
+Ans. i. 200 
+        ii. 400 
+ 
+4. Give the output of the following switch statement:  
+switch(num) 
+{ 
+case 10: 
+case 100: 
+System.out.println(“Ten and hundred”); break; 
+case 1000: 
+case 400: 
+System.out.println(“Thousand and 4 hundred”); break; 
+default: 
+System.out.println(“Invalid Input”); 
+ 
+i.  num=100 ii. num=1400 
+iii.  num=1000 iv. num=400 
+ans.  
+i. Ten and hundred 
+ii. Invalid Input 
+iii. Thousand and 4 hundred 
+iv. Thousand and 4 hundred 
+ 
+5.Write a program to input the Selling Price and Cost Price of a commodity and find the Profit or Loss 
+made upon selling the product. 
+For example, 
+INPUT: 
+
+--- PAGE 62 ---
+  
+ 
+Enter the Selling Price of the commodity: 456 
+ Enter the Cost Price of the commodity: 400 
+OUTPUT: 
+Profit: 56 
+INPUT: 
+Enter the Selling Price of the commodity: 300  
+Enter the Cost Price of the commodity: 310 
+OUTPUT: 
+Loss: 10 
+6. Write  a program to input an integer and check whether it is a 2 -digit or a  3 -digit number   or not. In 
+case it is not a 2 -digit or a 3 -digit number a relevant message (“Not 2 or 3 digit number”) should be  
+displayed. 
+Write a program to input 2 integers and check whether both the numbers are multiples of 7 or not. 
+ 
+7. Write a program to accept three sides of a triangle as parameter and check whether it can form  a 
+triangle or not. If it forms a triangle, check whether it is an acute angled, obtuse angled or right -angled 
+triangle. 
+(Hint: To form a triangle, each side should be less the sum of the other two sides.. 
+To form an acute angled triangle the square of every side should be less than the sum of the squares of 
+the other two sides. 
+To form an obtuse angled triangle the square of any side should be greater than the sum of the squares 
+of the other two sides. 
+To form a right angled triangle the square of any side should be equal to the sum of the squares of the 
+other two sides.) 
+8. A cloth showroom has announced the following festival discounts on the purchase of items, based on 
+the total cost of the items purchased: 
+ 
+Total Cost Discount (in Percentage) 
+Less than 2000 5% 
+>= 2000 to  <5000 25% 
+>= 5000 to <10000 35% 
+Above 10000 50% 
+Write a program to input the total cost and compute and display the amount to be paid by the customer 
+after availing the discount. 
+9. Write a program to calculate the Telephone bill according to the following rules: 
+   i. Minimum of Rs.250.00 is charged as rent. 
+   ii. First 80 calls FREE 
+   iii. Next 60 call @ Rs.0.60 
+   iv. Next 60 call @ Rs.0.50 
+   v. Above 200 call @ Rs.0.40 
+
+--- PAGE 63 ---
+  
+ 
+10. Write a program to calculate electricity bill for the number of units consumed given as input, 
+following the rules given below: 
+ Minimum  Meter rent charges  Rs.100.00 
+   Up to 250 units   Rs.0.80 per unit 
+   Above 250 units   Rs.1.50 per unit 
+ 
+6. Write java programs for the following: 
+a. To print the following series:    1    -4    7   -10 …….. -40. 
+b. To print the LCM and GCD of two numbers 
+c. To find the sum of the series 
+ +
+  
+d. To swap the first and last digit of a three digit number 
+e. To print place value of ten‟s and thousand‟s digit in a number. 
+e.g. number 72149 
+ output= 2000 and 40 
+ 
+ 
+ 
+ 
+CLASS: IX/SET-1 
+COMPUTER APPLICATION 
+Time: 1/2 HRS.           Marks: 40 
+Attempt all questions 
+QUESTION  1:          [2 x 5 = 10] 
+(a) What is JIT? How it helps? 
+(b) Write few lines about GIGO. 
+(c) Write the symbol used for remark statements. 
+(d) What is OOPS? Write its principles. 
+(e) Write the use of Blue J. 
+QUESTION  2:          [2 x 5 = 10] 
+(a) Differentiate between Integer   and   int. 
+(b) What is the use of Loop? Write the syntax of for loop. 
+(c) What is the use of break statement in switch case. Explain with example 
+(d) What is operator? Write the example of unary operator. 
+(e) Write the suitable data type to store „\b‟. How much bits it will occupy. 
+QUESTION  3: Do as directed :       [2 x 10=20] 
+(a) Give  one word answer for the following :         
+i) It is a keyword which is used to proceed for the next iteration in a loop.. 
+ii) It is a class which carries print ( ) method. 
+(b) Express the following in mathematical format also mention the data type of the resultant 
+variable. 
+i) a=Math.abs(Math.sin(a)+(a+b)); 
+
+--- PAGE 64 ---
+  
+ 
+ii) a=p+2*q/r*s; 
+(c) Write the range of the following data type : i)  byte  ii) char 
+(d) Find the error :            
+int  p=10,q==5; 
+while(p>q) 
+System.Out.println(p+q), system.out.printLn(“p=”+q); 
+(e)      Predict the output : 
+int k; 
+switch(k) 
+{ 
+ case 1: 
+ case  11: System.out.printlln(“A”); 
+   break; 
+ case 2:  Ststem.out.printlln(“B”); 
+ case  3: 
+ case  33: System.out.printlln(“C”); 
+ default: Ststem.out.printlln(“D”); 
+} 
+Write output in a box for the following input : k=1,  k=2 , k=33 & k=10 
+(f) Convert the following into if --- else. 
+d=a+b>5?a+b:a!=5?5:6; 
+(g) Write the corresponding java expression for the following 
+i) m+5n5+mn3  
+ii) (3a+4b+5/c)2/3 
+(h) Answer the below questions by choosing any one of the four given options: 
+i. Which of the following is not a keyword? 
+(i) case                     (ii) void                  (iii) while                           (iv) main 
+ii. Which of the following removes the fall through problem. 
+(i) continue                (ii) switch                (iii) break                          (iv) default 
+(i) Find the value in the following cases: 
+i) Math.rint(11.11) 
+ii) Math.abs(Math.sqrt(16)); 
+(j) Write  java statements for the following. 
+i) Create an appropriate variable p in order to store the age of a person. 
+ii) To store  the value of (p+q)4  in m which is double type. 
+ 
+CLASS: IX/SET-2 
+COMPUTER APPLICATION 
+Time: 1/2 HRS.           Marks: 40 
+Attempt all questions 
+QUESTION  1:          [2 x 5 = 10] 
+(a) Differentiate between data type and variable. 
+(b) What is encapsulation? How it is implemented in class? 
+(c) What is escape sequence? Write two examples. 
+(d) What is the use of default in switch case? In its absence what will happen? 
+(e) What is token?  Write the type of token a case statement uses. 
+QUESTION  2:          [2 x 5 = 10] 
+(f) What is the use of String args[ ]?  
+(a) What is the use of abs( ) method. Explain with example 
+(b) What is String? Write syntax to store bbsr in a string variable s. 
+
+--- PAGE 65 ---
+  
+ 
+(c) Differentiate between syntax error  and  logical error. 
+(d) What is the use of import keyword? Write the package which is activated automatically? 
+QUESTION  3: Do as directed :       [2 x 10=20] 
+(a) Give  one word answer for the following :         
+i. It is a method which is used to get the rounded value in double form. 
+ii. It is a package which carries BufferedReader class. 
+(b) Express the following in mathematical format also mention the data type of the resultant 
+variable. 
+i. a=Math.pow(Math.sin(a)+(a+b),3); 
+ii. a=2*p+(2*q/r)-s; 
+(c) Write the default value of the following data type : i)  boolean ii) float 
+(d) Find the output :            
+int  m=15,n=5; 
+while(m-->++n) 
+System.out.println(m+n),  
+System.out.println(“m=”+n); 
+(e) Convert to if else : 
+int k; 
+switch(k) 
+{ 
+ case 1: 
+ case  11: System.out.println(“a”); 
+   break; 
+ case 2:  Ststem.out.println(“b”); 
+ case  3: 
+ case  33: System.out.println(“c”); 
+ default: Ststem.out.println(“D”); 
+} 
+(f) Find the output of the following . 
+d=a+b>5?a+b:a!=5?5:6;  where  i) a=2, b=4 ii) a=2 , b=2 
+(g) Write the corresponding java expression for the following 
+a. (m/5n5 )+mn3/5  
+b. (3ab+5c4)2 
+(h) Answer the below questions by choosing any one of the four given options: 
+ii. Which of the following is not an identifier? 
+(i)new                      (ii) Void                  (iii) println                           (iv) 
+BufferedReader 
+iii. Which of the following is not a constant. 
+(i)   123f             (ii) “a12”                (iii) abc                          (iv) „\\‟ 
+(i) Find the value in the following cases: 
+a. Math.floor(Math.round(11.11)+.5) 
+b. Math.max(Math.sqrt(16),Math.min(3,-3)); 
+(j) Write  java statements for the following. 
+a. Create an appropriate variable m in order to store the compound interest. 
+b. To store  the value of Math.round(2.33)+Math.sqrt(64)  in m which is double type. 
+CLASS: IX/SET- 3 
+COMPUTER APPLICATION 
+Time: 1/2 HRS.           Marks: 40 
+Attempt all questions 
+QUESTION  1:          [2 x 5 = 10] 
+(f) What is byte code? How is it created? 
+
+--- PAGE 66 ---
+  
+ 
+(a) Write two application areas of Java. 
+(b) “Java is robust”- Explain the statement. 
+(c) Write four important features of java. 
+(d) Differentiate class and object. 
+QUESTION  2:          [2 x 5 = 10] 
+(a) What is the use of do  while loop. Give its syntax. 
+(b) What is a control statement? Give some examples. 
+(c) What operator precedence?  
+(d) What is constant? Write an example of single precision constant?   
+(e) What is non graphic character? How much bits \n will carry. 
+QUESTION  3: Do as directed :       [2 x 10=20] 
+(a) Convert the following into switch case. 
+if(ch==‟a‟ || ch==‟A‟) 
+ System.out.printlln(“A”); 
+else if(ch==‟B‟) 
+ System.out.printlln(“B”); 
+else if(ch==‟c‟) 
+ System.out.printlln(“C”); 
+(b) Predict the output:            
+int  x,y; 
+for (x=1;x++<5;x++); 
+System.out.println(“x=”+x++); 
+System.out.println(y=++x); 
+(c) int m=1; 
+do     
+{    
+       System.out.println(“PPT”+m+1); m+=2; 
+ }while(m++ +2<10); 
+  System.out.println(“PPT”+(m+1)); 
+i) How many times PPT will appear on the screen? 
+ii) What will be the output? 
+(d) Differentiate : m+1 and  m++ 
+(e) Rewrite the following : 
+i. a=a+5;(using  += operator) 
+ii. a+=1;(using ++postfix notation) 
+(f) write name of all the tokens used in the following statement and also count number of tokens in 
+the instruction : int  m=(int)Math.pow(10,2); 
+(g) find the values in the following cases: 
+a. Math.abs(Math.sqrt(25)*-0.5); 
+b. Math.round(Math.pow(10,2)+0.75) 
+c. Math.ceil(Math.round(14.99)); 
+d.  (char)Math.rint(64.99); 
+(h) Write  java statements for the following. 
+a. To display highest out of three numbers present in a,b,c. 
+b. To store the integer part of a decimal number  present in m; 
+(i) Write the corresponding java expression for the following 
+a. (ax5+by3)1/2  
+b. (a+5b/c)5 
+ 
+ 
+CLASS: IX/SET - 4 
+
+--- PAGE 67 ---
+  
+ 
+COMPUTER APPLICATION 
+Time: 1/2 HRS.           Marks: 40 
+Attempt all questions 
+QUESTION  1:          [2 x 5 = 10] 
+(a) What debugging? 
+(b) How java compilation is different from ordinary compilation. 
+(c) Differentiate between operator and operand. 
+(d) What is class? Write its elements. 
+(e) Why java is called as WORA language. 
+QUESTION  2:          [2 x 5 = 10] 
+(a) Explain the scope of a variable. 
+(b) What is if  else ladder ? Give an example. 
+(c) Why parseInt( ) method is essential? In which class is it present?  
+(d) Write two lines about boolean data type. 
+(e) What is mixed expression? Give one example. 
+QUESTION  3: Do as directed :       [2 x 10=20] 
+(a) Write one word answer for the following :         
+i. It is a package which carries the String class. 
+ii. It is a data type which ranges within 0 to 65,535 
+(b) Write the difference between   ab    and a*b 
+(c) Rectify the error if any, in the following instructions with appropriate reason:   
+char  e;   float  d;        
+d=3.55;      
+e=„9‟;  
+(d) Predict the output.            
+int  a,b; 
+for (a=1;a<10;a+=3) 
+for(b=1;b<a;b++); 
+System.out.println(a+b); 
+System.out.println(“b=”+a); 
+(e) Write the type of variable needed to store following type of constants: 
+i. 234L 
+ii. true 
+iii. “false” 
+iv. 2+‟2‟ 
+(f) Predict the output : 2+4*1/2%5-33+1/2/3*4 
+(g) Answer the below questions by choosing any one of the four given options: 
+i. Which of the following is not a separator? 
+(i) ;                     (ii)  %                  (iii) :                           (iv) “” 
+ii. Which of the following is a referential datatype. 
+(i)   Float            (ii) long            (iii) double                         (iv) char 
+(h) Find the value in the following cases: 
+a. Math.ceil(Math.floor(11.11)+.5) 
+b. Math.min(Math.sqrt(16),Math.min(-33,-3)); 
+(i) Write  java statements for the following. 
+a. Create an appropriate variable m in order to store the value of readLine(). 
+b. To store  the value of (int)Math.sqrt(2.33)+Math.round(64)  in m which is double type. 
+ 
+ 
+ 
+
+--- PAGE 68 ---
+  
+ 
+ 
+Do as directed: 
+1. State the java concept that is implemented through: 
+a. A super class and a subclass. 
+b. The act of representing essential features of a class without including the background details. 
+Ans:  a. Inheritance  b. Data abstraction 
+2. Mention two limitations of procedure oriented language ? 
+Ans: i) The inability to reuse code throughout the program 
+         ii)Causes problem for the programmer while debugging. 
+3. Mention two benefits of object oriented language ? 
+Ans: i) Data values are secured. 
+         ii) Mishandling of data is protected. 
+4. In object oriented programming, stress is given on: 
+a. Procedure b. Method c. Class   d. Data 
+Ans: d. Data 
+5. Which of the following principle does not allow to access directly from outside the class premises : 
+a. Data hiding b. Encapsulation c. Abstraction  d. All of the above 
+Ans: a. Data hiding 
+6. In procedural programming, the stress is laid on : 
+a. Class   b.  function c.  data  d. object 
+Ans: b. function 
+7. A _________ is a set of objects that has common attributes and common behaviours. 
+a. Abstractions b. encapsulation c. class  d. function 
+Ans:  c. class 
+8. What are the type of conversion shown in the following examples: 
+double  x=15.2; 
+int  a=12; 
+i. int  y=(int)x;  iii. char  c=(char)120;  
+ii. long  b=a;  iv. int  x= ‘x’; 
+Ans: i. Explicit conversion ii. Implicit conversion iii. Explicit conversion iv. Implicit conversion 
+ 
+9. Give the reason whether the following assignments are correct or not. 
+i. int   m=155;    e. String  b= “true”; 
+ii. float   f=0.002654132;  f. char   ch= “apps”;   
+
+--- PAGE 69 ---
+  
+ 
+iii. String   str= ‘computer’;  g.  String   st= “Application”; 
+iv. boolean   p=false;   h.  double   n=455.29044125;   
+10. Distinguish between  (p!=q)  and   !(p==q) 
+11. What is null loop? Write one example. 
+ 
+12. Predict the output: 
+i. If y=14, then find  z=(++y*(y++  +5)) 
+ii. If a=8, find the value of a-=++a + a++ +4 
+iii. If a=12,b=8 ,find the value of a*=++a/6 + b++ %3 
+iv. If x=4, find the value of x+=x++ *++x%2 
+v. If a=48,b=13 , then find the value of a+=b++*5/a++ +b 
+vi. int  k=5,j=9; k+=k++ - ++j+k; find the value of k and j. 
+vii. if int  y=10; then find the value of y and z, where z=(++y*(y++ +5)); 
+viii. a=7; find the value of a when a+=a++ + ++a+--a+a--; 
+ix. y=8;find the value of y when y+=++y+y-- +--y ; 
+x.  a=5;  a++; a-=(a--)-(--a); find the value of a. 
+xi. int  c=(3<4)?3*4:3+4; find the value of c. 
+xii. int  x=90; 
+char  c=(x<=90)? ‘Z’: ‘I’; 
+Find the value of c. 
+xiii. int  a=18,b=12; 
+boolean  t=(a>20 && b<15)? true:false; 
+Find the value of t. 
+xiv. c=(val+550<1700)?200:400; 
+find the value of c for  a)val=1000 and b)val=1500 
+13. Rewrite the following programme segment using   
+ 
+

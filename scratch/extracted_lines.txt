@@ -1,0 +1,359 @@
+Total pages: 69
+Found 356 matching lines. Writing to file.
+
+[Page 1] 4. Operators and Expression
+[Page 7] keywords, identifiers, literals , punctuators and operators.
+[Page 8] atoken. The following Tokens are available in Java: Keywords, Identifiers, Literals, Punctuations, Operators.
+[Page 8] literal that represents the value A of type char, and 17L is a literal that represents the number 17 as value of
+[Page 9] we are saying what values the expression can have. For example to say that a variable is of type int says that
+[Page 10] Ans: A variable is a named memory location, which holds a data value of a particular data types. E.g. double
+[Page 10] Ans: A variable is a named memory location, which holds a data value of a particular data types. When a
+[Page 11] CH 5: OPERATORS AND EXPRESSIONS
+[Page 11] Ans: Operators are special symbols that represent operations that can be carried out on variables,
+[Page 11] constants or expressions. An operator is mostly an symbol and sometimes a keyword also.
+[Page 11] The different types of operators are:
+[Page 11] Arithmetic operator( unary operators, binary operators, increment/decrement operators)
+[Page 11] Relational operators
+[Page 11] Logical Operators
+[Page 11] Assignment operators
+[Page 11] 2. What are arithmetic operators?
+[Page 11] Ans: Arithmetic  operators are used for various mathematical calculations. The result of an
+[Page 11] arithmetical expression is numerical values. Arithmetical operators are of following types: Unary
+[Page 11] and Binary operators and increment/decrement operator.
+[Page 11] 3. Write major difference between the unary and binary operators?
+[Page 11] Ans: The operators that acts on one operand are referred to as Unary Operator. There are two
+[Page 11] Unary operators Unary + operator and Unary – operator. The operators that ac ts upon two
+[Page 11] operands are referred to as Binary Operator. The Binary Operators are Addition  (+), Subtraction (-
+[Page 11] 4. What is increment operator? What are postfix and prefix increment operators?
+[Page 11] Ans: The „++‟ operator is called increment operator. The increment operators add 1 to its operand.
+[Page 11] 5. Find the value of  x after evaluating x += x++ + –x + 4 where x=3 before the evaluation.
+[Page 11] 6. What do you mean by Relational Operators?
+[Page 11] Ans: Relational operators are used to determine the relationship between different operands.
+[Page 11] These are used in work of compression also. The relational expression (condition) returns 0 if the
+[Page 12] 7. What is Logical operators?
+[Page 12] Ans: The logical operators c ombine the result of or more tha n two expressio ns. The mode of
+[Page 12] connecting relationship in these expressions refers as logical and the expressions are called
+[Page 12] logical expression. The logical expression returns 1 i f the result is true otherwise it  returns 0. The
+[Page 12] logical operators provided by Java are && Logical AND, || Logical OR, ! Logical NOT.
+[Page 12] expression1?expression2:expression3 . and the example is  bonus=sales>15000?250:50;
+[Page 12] 11. What do you mean by precedence? Illustrate with the help of example.
+[Page 12] Ans: Precedence is the order in which a program evaluates the operations in a formula or
+[Page 12] expression. All operators have precedence value. An operator with higher precedence value is
+[Page 12] evaluated first then the operator having lower precedence value. consider the following example
+[Page 12] The value of this expression is 29 not 54 or 34. Multiplication has been performed first in this
+[Page 12] expression.
+[Page 13] expression to be of specific type, this also known as type casting. e.g. (float)(x+y/2)
+[Page 13] results. Java supports two output methods that can be used to send the results to the screen.
+[Page 13] end-of-line) character is sent. As a result print() method prints output on one line.
+[Page 13] 16. What is an Expression? Explain its different types.
+[Page 13] returns a value. It may be combination of operators, variables and constants. There are different
+[Page 13] types of expressions.
+[Page 13] (1) Constant Expressions: 8 * 12 /2
+[Page 13] (2) Integral Expressions: formed by connecting integer constants x = (a + b)/2
+[Page 13] (3) Logical Expressions: a > b    or a!=b
+[Page 13] (4) Boolean expression: (y+z) >= (x/z)
+[Page 14] System.out.println(“Hello”);
+[Page 14] System.out.println(“How”);
+[Page 14] System.out.println(“are you?”);
+[Page 14] 3. What is the default value of reference data type ?
+[Page 14] Ans. The default value of  reference datatype  is a null value.
+[Page 15] compiled and executed without errors but does not generate the desired output.
+[Page 16] 2. Give the output of the following expressions.
+[Page 16] A. Give the output of the following functions:
+[Page 17] B. Write equivalent Java expressions for the following:
+[Page 18] if(expression) statement
+[Page 18] System.out.println(“Grade A”);
+[Page 18] condition evaluates to true and the latter works if the condition evaluates to false.
+[Page 19] expression, and hence a single value can be assigned, for larger expression If is more flexible. (iii)
+[Page 19] Ans: Switch statement successively tests the value of an expression against a set of integers or
+[Page 19] switch(expression)
+[Page 19] The expression is evaluated and its values are matched against the value of the constants
+[Page 20] Ans: The switch statement is more advantageous then the if statement when the test expression
+[Page 20] constants. The reason being that the switch statement evaluates the expression once whereas the
+[Page 20] equivalent if statement evaluates the expression repeatedly.
+[Page 20] case 1: System.out.println(“Sunday”); break;
+[Page 20] case 2: System.out.println(“Monday”); break;
+[Page 20] case 3: System.out.println(“Tuesday”); break;
+[Page 20] case 4: System.out.println(“Wednesday”); break;
+[Page 20] case 5: System.out.println(“Thursday”); break;
+[Page 20] case 6: System.out.println(“Friday”); break;
+[Page 20] case 7: System.out.println(“Saturday”); break;
+[Page 21] default :  System.out.println(“Invalid Input”);
+[Page 21] can only test for equality, where as if can evaluate a relational or logical expression. (ii) it
+[Page 21]  Initialization Expression(s). Before entering a loop, the variable that controls the
+[Page 21]  Test Expression. The test-expression (also called test-condition) is a condition, which
+[Page 21] decides whether the loop body will be executed or not. Till the test expression evaluates to
+[Page 21]  Update Expression(s). The update expression(s) change the value(s) of the control
+[Page 21] variable(s). The update expression (s) is usually made to be executed; before the next
+[Page 21] expression is true) form the body of the loop
+[Page 21] expression is evaluated at the beginning where as in do -while loop test expression is
+[Page 21] evaluated at the end, after the body of the loop. (2) In while loop if the test expression is
+[Page 21] false loop does not continued but in do-while whatever the test expression may be the loop
+[Page 22] System.out.println(i);
+[Page 22] System.out.println(i);
+[Page 22] for(initialization; test-expression; increment)
+[Page 22] System.out.println(i);
+[Page 22] System.out.println(“i=” +i+ “ ”+ “j=”+j);
+[Page 23] System.out.println(“School”);
+[Page 23] <update expression>
+[Page 23] System.out.println(“Hello”);;
+[Page 23] while (condition or test-expression)
+[Page 23] <update expression>
+[Page 24] System.out.println(“Hello”);;
+[Page 24] loop. Difference: In while loop the test expression is evaluated at the beginning where as
+[Page 24] in do-while loop test expression is evaluated at the bottom, after the body of the loop.
+[Page 25] System.out.println(x+ “ ” +y);
+[Page 25] Shareware is a good way to market software. It allows consumers to  evaluate an
+[Page 28] System.out.println(y);
+[Page 28] System.out.print(i+” “); i++;
+[Page 28] System.out.print(i+ “ ”);
+[Page 28] 4. What will be the output of the following code?
+[Page 28] System.out.println(“m=” +m);
+[Page 28] System.out.println(“n=”+n);
+[Page 29] System.out.println("Enter a number");
+[Page 29] System.out.println("The number is EVEN");
+[Page 29] System.out.println("The number is ODD");
+[Page 29] System.out.println("Enter a number");
+[Page 29] System.out.println("The number is divisible by 15");
+[Page 29] System.out.println("The number is not divisible by 15");
+[Page 30] System.out.println("Enter a number");
+[Page 30] System.out.println("The number has single digit");
+[Page 30] System.out.println("The number has two digits");
+[Page 30] System.out.println("The number has more than 2 digits");
+[Page 30] System.out.println("Enter a number");
+[Page 30] System.out.println("The number POSITIVE");
+[Page 30] System.out.println("The number is NEGATIVE");
+[Page 30] System.out.println("The number is NUTRAL");
+[Page 31] System.out.println("Enter the sales amount");
+[Page 31] System.out.println("The commission amount is : "+ comm);
+[Page 31] System.out.println("The commission amount is : "+ comm);
+[Page 31] System.out.println("The commission amount is : "+ comm);
+[Page 31] System.out.println("The commission amount is : "+ comm);
+[Page 31] System.out.println("The amount you have given is not a valid sales
+[Page 32] System.out.println("Enter the yearly income");
+[Page 32] System.out.println("The Income tax to be paid is : "+ tax);
+[Page 33] System.out.println("Enter the distance covered");
+[Page 33] System.out.println("The total fare to be collected is : "+ famt);
+[Page 34] System.out.println("Press 1 to check leap year , 2 to check +ve or -ve");
+[Page 34] System.out.println("Enter your choice");
+[Page 34] System.out.println("enter a year");
+[Page 34] System.out.println("LEAP YEAR");
+[Page 34] System.out.println("NOT  A LEAP YEAR");
+[Page 34] System.out.println("LEAP YEAR");
+[Page 34] System.out.println("NOT A LEAP YEAR");
+[Page 34] System.out.println("enter a number");
+[Page 34] System.out.println("POSITIVE");
+[Page 34] System.out.println("NEGATIVE");
+[Page 34] System.out.println("NUTRAL");
+[Page 34] System.out.println("WRONG CHOICE");
+[Page 35] System.out.println("Enter the value of a,b and c");
+[Page 35] System.out.println("The roots are real and equal");
+[Page 35] System.out.println("The root is :"+x1);
+[Page 35] System.out.println("The roots are real but not equal");
+[Page 35] System.out.println("The first root is :"+x1);
+[Page 35] System.out.println("The second root is :"+x2);
+[Page 35] System.out.println("The roots are imaginary");
+[Page 36] System.out.println("Enter a value from 1 to 7");
+[Page 36] System.out.println("MONDAY");
+[Page 36] System.out.println("TUESDAY");
+[Page 36] System.out.println("WEDNESDAY");
+[Page 36] System.out.println("THURSDAY");
+[Page 36] System.out.println("FRIDAY");
+[Page 36] System.out.println("SATURDAY");
+[Page 36] System.out.println("SUNDAY");
+[Page 36] System.out.println("INVALID CHOICE");
+[Page 37] System.out.println("Enter a value from 1 to 7");
+[Page 37] System.out.println("MONDAY");
+[Page 37] System.out.println("TUESDAY");
+[Page 37] System.out.println("WEDNESDAY");
+[Page 37] System.out.println("THURSEDAY");
+[Page 37] System.out.println("FRIDAY");
+[Page 37] System.out.println("SATURDAY");
+[Page 37] System.out.println("SUNDAY");
+[Page 37] System.out.println("WRONG CHOICE");
+[Page 37] System.out.println("Enter a character");
+[Page 38] System.out.println("CAPITAL LETTER");
+[Page 38] System.out.println("SMALL LETTER");
+[Page 38] System.out.println("DIGIT");
+[Page 38] System.out.println("BLANK SPACE");
+[Page 38] System.out.println("SPECIAL CHARACTER");
+[Page 38] System.out.println("Enter a character");
+[Page 38] System.out.println("CAPITAL LETTER");
+[Page 38] System.out.println("ITS SMALL FORM IS : "+(char)(c+32));
+[Page 39] System.out.println("SMALL LETTER");
+[Page 39] System.out.println("ITS CAPITAL FORM IS : "+(char)(c-32));
+[Page 39] System.out.println("NOT AN ALPHABET");
+[Page 39] System.out.println("Enter your age");
+[Page 39] System.out.println("Press M or m for male and F or f for female ");
+[Page 39] System.out.println("OLD MALE PERSON ");
+[Page 39] System.out.println("YOUNG MALE PERSON");
+[Page 40] System.out.println("OLD FEMALE PERSON ");
+[Page 40] System.out.println("YOUNG FEMALE PERSON");
+[Page 40] System.out.println("NOT A VALID OPTION");
+[Page 40] System.out.println("Enter three sides of a Triangle");
+[Page 40] System.out.println("EQUILATERAL");
+[Page 40] System.out.println("ISOCELEOUS");
+[Page 40] System.out.println("NOT A VALID OPTION");
+[Page 41] System.out.println("Triangle cannot be possible");
+[Page 41] System.out.println("enter two number");
+[Page 41] System.out.println("Amicable Pair");
+[Page 41] System.out.println("Not Amicable Pair");
+[Page 41] System.out.println("enter a number");
+[Page 42] System.out.println("prime number");
+[Page 42] System.out.println("Not prime number");
+[Page 42] System.out.println("enter a number");
+[Page 42] System.out.println("perfect number");
+[Page 42] System.out.println("Not perfect number");
+[Page 42] System.out.println("enter two numbers");
+[Page 43] System.out.println("HCF of "+m+ " and "+n+" is : "+hcf);
+[Page 43] System.out.println("LCM of "+m+ " and "+n+" is : "+ ((m*n)/hcf));
+[Page 43] System.out.println("enter two numbers");
+[Page 43] System.out.println("CO-PRIME ");
+[Page 43] System.out.println("Not CO_PRIME");
+[Page 43] System.out.println("enter two number");
+[Page 44] System.out.println("TWIN PRIME");
+[Page 44] System.out.println("Not TWIN PRIME");
+[Page 44] System.out.println("enter a numbers");
+[Page 44] System.out.println("ARMSTRONG NUMBER ");
+[Page 44] System.out.println("Not ARMSTRONG NUMBER");
+[Page 45] System.out.println("enter a numbers");
+[Page 45] System.out.println("PALINDROME NUMBER ");
+[Page 45] System.out.println("Not A PALINDROME NUMBER");
+[Page 45] System.out.println("enter a numbers");
+[Page 45] System.out.println("NELSON NUMBER ");
+[Page 45] System.out.println("Not A NELSON NUMBER");
+[Page 46] System.out.println("Not A VALID number");
+[Page 46] System.out.println("enter a number");
+[Page 46] System.out.println("THE FACTORIAL OF THE NUMBER IS : "+f);
+[Page 46] System.out.println("First 15 Fibonacci numbers are :");
+[Page 46] System.out.print(a+"  "+b+"  ");
+[Page 46] System.out.print(c+"   ");
+[Page 47] System.out.println("15th Fibonaccii number is  :  " +c);
+[Page 47] System.out.println(" The "+i+" th Fibonacci number is : "+ c);
+[Page 47] System.out.println("enter a numbers");
+[Page 47] System.out.println("ODIOUS ");
+[Page 47] System.out.println("EVIOUS");
+[Page 48] System.out.println("enter the range");
+[Page 48] System.out.pritnln(“Press 1 to run first series or press 2 for second series”);
+[Page 48] System.out.pritnln(“Enter your choice”);
+[Page 48] System.out.println(“The sum of the series is :”+s);
+[Page 48] System.out.println(“The sum of the series is :”+s);
+[Page 48] System.out.println(“WRONG  CHOICE”);
+[Page 48] System.out.println(“Enter a number:”);
+[Page 49] System.out.println(“Factorial=”+f);
+[Page 49] OUTPUT: Factors: 1 2 3 4 6 12
+[Page 49] System.out.println(“Enter an integer:”);
+[Page 49] System.out.println(“Factors:”);
+[Page 49] System.out.print(i+“ ”);
+[Page 50] System.out.println(“Enter an integer:”);
+[Page 50] System.out.println(“No. of Factors:”+c);
+[Page 50] System.out.println(“Enter an integer:”) ;
+[Page 50] System.out.println(“Prime number”);
+[Page 50] System.out.println(“Not a Prime number”);
+[Page 51] System.out.println(“Enter 10 integers:”); for(i=1;i<=10;i++)
+[Page 51] System.out.println(“Sum of the numbers=”+s);
+[Page 51] System.out.println(“Enter 10  integers:”); for(i=1;i<=10;i++)
+[Page 51] System.out.println(“Sum of prime numbers=”+s);
+[Page 52] System.out.println(i);
+[Page 52] System.out.println(i);
+[Page 53] if(r==i) System.out.println(i);
+[Page 53] System.out.println(“Enter a number:”);
+[Page 53] System.out.println(“Magic Number”);
+[Page 53] System.out.println(“Not a magic number”);
+[Page 54] System.out.println(“Enter the value of x:”);
+[Page 54] System.out.println(“Enter the value of n:”);
+[Page 54] System.out.println(“Sum=”+s);
+[Page 55] System.out.print(6-j);
+[Page 55] System.out.print(“ ”);
+[Page 55] System.out.println();
+[Page 55] System.out.print(j);
+[Page 55] System.out.print(j);
+[Page 55] System.out.println();
+[Page 56] System.out.println(“Enter a number:”);
+[Page 56] System.out.println(“MENU”);
+[Page 56] System.out.println(“1.Prime Number”);
+[Page 56] System.out.println(“2.Automorphic Number”);
+[Page 56] System.out.println(“Enter your choice:”);
+[Page 56] System.out.println(“Prime Number”);
+[Page 56] System.out.println(“Not a Prime Number”);
+[Page 56] System.out.println(“Automorphic Number”);
+[Page 56] System.out.println(“Not an Automorphic Number”);
+[Page 57] System.out.println(“Invalid choice”);
+[Page 57] System.out.pritnln(“Press 1 to show first structure or press 2 for second structure”);
+[Page 57] System.out.pritnln(“Enter your choice”);
+[Page 57] System.out.print(k);
+[Page 57] System.out.println();
+[Page 57] System.out.print(“  ”);
+[Page 57] System.out.print(“*”);
+[Page 57] System.out.println();
+[Page 57] System.out.println(“WRONG  CHOICE”);
+[Page 58] 2. Write a program that outputs the results of the following evaluations based on the number entered
+[Page 58] ii. Absolute value of the number
+[Page 58] Output: 4.37
+[Page 58] Output: 24.31
+[Page 59] denominations. E.g. if the amount is Rs. 3456, the output
+[Page 59] Output
+[Page 60] 6. If a = 5 , b= 9 , calculate the value of:
+[Page 60] 7. Write Java expressions:
+[Page 60] 9. State the value of n and ch when
+[Page 60] 10. Evaluate:
+[Page 60] 1.  Using conditional operator write equivalent expressions for the following:
+[Page 60] Ans. System.out.println((x%2==0)? “Even”: “Odd”;
+[Page 61] 3.Find the output of the following program segment, when:
+[Page 61] sum = n + val > 750? 400 : 200; System.out.println(sum);
+[Page 61] 4. Give the output of the following switch statement:
+[Page 61] System.out.println(“Ten and hundred”); break;
+[Page 61] System.out.println(“Thousand and 4 hundred”); break;
+[Page 61] System.out.println(“Invalid Input”);
+[Page 62] OUTPUT:
+[Page 62] OUTPUT:
+[Page 63] e. To print place value of ten‟s and thousand‟s digit in a number.
+[Page 63] output= 2000 and 40
+[Page 64] System.Out.println(p+q), system.out.printLn(“p=”+q);
+[Page 64] (e)      Predict the output :
+[Page 64] case  11: System.out.printlln(“A”);
+[Page 64] case  33: System.out.printlln(“C”);
+[Page 64] Write output in a box for the following input : k=1,  k=2 , k=33 & k=10
+[Page 64] (g) Write the corresponding java expression for the following
+[Page 64] ii) To store  the value of (p+q)4  in m which is double type.
+[Page 65] (c) Write the default value of the following data type : i)  boolean ii) float
+[Page 65] (d) Find the output :
+[Page 65] System.out.println(m+n),
+[Page 65] System.out.println(“m=”+n);
+[Page 65] case  11: System.out.println(“a”);
+[Page 65] case  33: System.out.println(“c”);
+[Page 65] (f) Find the output of the following .
+[Page 65] (g) Write the corresponding java expression for the following
+[Page 65] b. To store  the value of Math.round(2.33)+Math.sqrt(64)  in m which is double type.
+[Page 66] (c) What operator precedence?
+[Page 66] System.out.printlln(“A”);
+[Page 66] System.out.printlln(“B”);
+[Page 66] System.out.printlln(“C”);
+[Page 66] (b) Predict the output:
+[Page 66] System.out.println(“x=”+x++);
+[Page 66] System.out.println(y=++x);
+[Page 66] System.out.println(“PPT”+m+1); m+=2;
+[Page 66] System.out.println(“PPT”+(m+1));
+[Page 66] ii) What will be the output?
+[Page 66] (i) Write the corresponding java expression for the following
+[Page 67] (e) What is mixed expression? Give one example.
+[Page 67] (d) Predict the output.
+[Page 67] System.out.println(a+b);
+[Page 67] System.out.println(“b=”+a);
+[Page 67] (f) Predict the output : 2+4*1/2%5-33+1/2/3*4
+[Page 67] a. Create an appropriate variable m in order to store the value of readLine().
+[Page 67] b. To store  the value of (int)Math.sqrt(2.33)+Math.round(64)  in m which is double type.
+[Page 69] 12. Predict the output:
+[Page 69] ii. If a=8, find the value of a-=++a + a++ +4
+[Page 69] iii. If a=12,b=8 ,find the value of a*=++a/6 + b++ %3
+[Page 69] iv. If x=4, find the value of x+=x++ *++x%2
+[Page 69] v. If a=48,b=13 , then find the value of a+=b++*5/a++ +b
+[Page 69] vi. int  k=5,j=9; k+=k++ - ++j+k; find the value of k and j.
+[Page 69] vii. if int  y=10; then find the value of y and z, where z=(++y*(y++ +5));
+[Page 69] viii. a=7; find the value of a when a+=a++ + ++a+--a+a--;
+[Page 69] ix. y=8;find the value of y when y+=++y+y-- +--y ;
+[Page 69] x.  a=5;  a++; a-=(a--)-(--a); find the value of a.
+[Page 69] xi. int  c=(3<4)?3*4:3+4; find the value of c.
+[Page 69] Find the value of c.
+[Page 69] Find the value of t.
+[Page 69] find the value of c for  a)val=1000 and b)val=1500
