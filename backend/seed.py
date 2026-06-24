@@ -1,6 +1,12 @@
 from database import SessionLocal, engine, Base
 from models import Question, Trace
 import json
+import os
+import sys
+
+# Ensure seed packages can be imported
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from seed_expansion import generate_expanded_cards
 
 def seed_database():
     # Recreate tables to apply schema fresh
@@ -10,6 +16,9 @@ def seed_database():
     db = SessionLocal()
 
     try:
+        # Generate all expanded flashcard lists
+        icse9_cards, icse10_cards, apcsa_cards = generate_expanded_cards()
+
         # Define base questions templates for all three tracks
         tracks = ["ICSE9", "ICSE10", "APCSA"]
 
@@ -84,68 +93,28 @@ def seed_database():
             db.commit()
 
             # 2. Flashcard Questions
-            f1 = Question(
-                track=track,
-                chapter_title="Chapter 1: Introduction to Java",
-                type="flashcard",
-                content={
-                    "front": "What is the difference between == and .equals() in Java?",
-                    "back": "== compares references (memory locations), while .equals() compares the actual values inside the objects."
-                },
-                correct_answer="N/A",
-                explanation="Use == for primitive data types and reference equality. Use .equals() to check if two objects contain the same data."
-            )
+            if track == "ICSE9":
+                flashcard_source = icse9_cards
+            elif track == "ICSE10":
+                flashcard_source = icse10_cards
+            else:  # APCSA
+                flashcard_source = apcsa_cards
 
-            f2 = Question(
-                track=track,
-                chapter_title="Chapter 4: Decision Making (Selection)",
-                type="flashcard",
-                content={
-                    "front": "How many times is a do-while loop guaranteed to run?",
-                    "back": "At least once, because the loop condition is evaluated at the bottom after the code body executes."
-                },
-                correct_answer="N/A",
-                explanation="A while loop checks condition first (may run 0 times). A do-while checks condition last (always runs at least 1 time)."
-            )
-
-            f3 = Question(
-                track=track,
-                chapter_title="Chapter 2: Variables & Data Types",
-                type="flashcard",
-                content={
-                    "front": "What is a wrapper class in Java?",
-                    "back": "A class that wraps a primitive data type into an object (e.g. Integer wraps int, Double wraps double)."
-                },
-                correct_answer="N/A",
-                explanation="Wrapper classes allow primitives to be used in collection structures like ArrayLists which only support objects."
-            )
-
-            f4 = Question(
-                track=track,
-                chapter_title="Chapter 5: User-Defined Methods",
-                type="flashcard",
-                content={
-                    "front": "What is constructor overloading in Java?",
-                    "back": "Defining multiple constructors in the same class, each having a different parameter list (different number, types, or order of parameters)."
-                },
-                correct_answer="N/A",
-                explanation="Constructor overloading allows initializing objects in different ways depending on the arguments passed to 'new'."
-            )
-
-            f5 = Question(
-                track=track,
-                chapter_title="Chapter 2: Variables & Data Types",
-                type="flashcard",
-                content={
-                    "front": "What is the difference between instance and local variables?",
-                    "back": "Instance variables belong to a class instance and get default values. Local variables are declared in a method and must be initialized before use."
-                },
-                correct_answer="N/A",
-                explanation="Local variables do not have default values in Java. Accessing an uninitialized local variable triggers a compilation error."
-            )
-
-            db.add_all([f1, f2, f3, f4, f5])
-
+            for ch_num, ch_title, front, back, exp in flashcard_source:
+                fq = Question(
+                    track=track,
+                    chapter_number=ch_num,
+                    chapter_title=ch_title,
+                    type="flashcard",
+                    content={
+                        "front": front,
+                        "back": back
+                    },
+                    correct_answer="N/A",
+                    explanation=exp
+                )
+                db.add(fq)
+            db.commit()
             # 3. Predict the Output Questions
             if track == "ICSE9":
                 questions_data = [
